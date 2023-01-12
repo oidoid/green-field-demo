@@ -59,7 +59,7 @@ export function GreenField(
     new Set([
       CamSystem,
       FollowCamSystem,
-      CursorSystem, // Process first
+      new CursorSystem(), // Process first
       FollowPointSystem,
       RenderSystem, // Last
     ]),
@@ -131,7 +131,7 @@ export namespace GreenField {
         filmByID: self.assets.atlasMeta.filmByID,
         cam: self.cam,
         ecs: self.ecs,
-        delta,
+        tick: self.tick,
         input: self.input,
         time: self.age,
         instanceBuffer: self.instanceBuffer,
