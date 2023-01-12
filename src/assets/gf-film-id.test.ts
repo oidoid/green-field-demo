@@ -1,14 +1,14 @@
 import { AtlasMeta } from '@/atlas-pack';
-import { SPFilmID } from '@/super-patience';
+import { GFFilmID } from '@/green-field';
 import { assertExists } from 'std/testing/asserts.ts';
 import atlasJSON from '../../assets/atlas.json' assert { type: 'json' };
 
 Deno.test('Atlas and FilmIDs are aligned.', () => {
-  const atlasMeta = atlasJSON as unknown as AtlasMeta<SPFilmID>;
-  for (const id of SPFilmID.values) {
+  const atlasMeta = atlasJSON as unknown as AtlasMeta<GFFilmID>;
+  for (const id of GFFilmID.values) {
     assertExists(atlasMeta.filmByID[id], `Atlas missing ${id} FilmID.`);
   }
   for (const id of Object.keys(atlasMeta.filmByID)) {
-    assertExists(SPFilmID.values.has(id as SPFilmID), `FilmID missing ${id}.`);
+    assertExists(GFFilmID.values.has(id as GFFilmID), `FilmID missing ${id}.`);
   }
 });

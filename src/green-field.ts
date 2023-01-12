@@ -20,6 +20,7 @@ import {
   RenderSystem,
   Sprite,
 } from '@/void';
+import { Synth } from '../../../void/src/audio/Synth.ts';
 
 export interface GreenField { // class pls
   readonly assets: Assets;
@@ -169,6 +170,7 @@ function processDebugInput(self: GreenField, update: GFECSUpdate): void {
       ['Action'],
     )
   ) {
+    Synth.play(Synth(), 'sawtooth', 200, 500, 0.15);
     update.pickHandled = true;
     console.log('combo');
   }
