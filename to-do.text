@@ -1,0 +1,11 @@
+strip everything away and make it really nice. should be as empty as practical for this demo.
+num, XY
+copy over most promising green field sprites
+copy over bunny sprites
+populate game with many bunnies
+copy over NE cursor
+squish bunny on cursor input
+add font
+increment score when squish bunny
+death when they get all carrots offscreen
+gradually increase number of bunnies
