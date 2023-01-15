@@ -51,7 +51,7 @@ export function GreenField(
   const canvas = window.document.getElementsByTagName('canvas').item(0);
   assertNonNull(canvas, 'Canvas missing.');
 
-  const random = Random(I32.mod(Date.now()));
+  const random = new Random(I32.mod(Date.now()));
 
   const newRenderer = () =>
     Renderer(canvas, assets.atlas, assets.shaderLayout, assets.atlasMeta);
@@ -81,7 +81,7 @@ export function GreenField(
     cam,
     canvas,
     random,
-    instanceBuffer: InstanceBuffer(assets.shaderLayout),
+    instanceBuffer: new InstanceBuffer(assets.shaderLayout),
     ecs,
     input: new Input(cam),
     rendererStateMachine: new RendererStateMachine({
