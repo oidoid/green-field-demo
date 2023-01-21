@@ -20,7 +20,7 @@ import {
   RenderSystem,
   Sprite,
 } from '@/void';
-import { Synth } from '../../../void/src/audio/Synth.ts';
+import { Synth } from '@/void';
 
 export interface GreenField { // class pls
   readonly assets: Assets;
