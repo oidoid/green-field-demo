@@ -19,10 +19,10 @@ import {
   RendererStateMachine,
   RenderSystem,
   Sprite,
+  Synth,
 } from '@/void';
-import { Synth } from '@/void';
 
-export interface GreenField { // class pls
+export interface GreenField extends GFECSUpdate { // class pls
   readonly assets: Assets;
   readonly canvas: HTMLCanvasElement;
   readonly cam: Cam;
@@ -32,7 +32,6 @@ export interface GreenField { // class pls
   readonly rendererStateMachine: RendererStateMachine;
   /** The total number of ticks completed. ticks * tick = age. */
   ticks: number;
-  age: number;
   /**
    * The exact duration in milliseconds to apply each update. Any number of
    * updates may occur per animation frame.
@@ -96,10 +95,12 @@ export function GreenField(
     tick,
     ticks: 0,
     delta: 0,
-    get age() {
+    get time() {
       return this.tick * this.ticks;
     },
     cursor: ECS.query(ecs, 'cursor', 'sprite')![0]!.sprite, // this api sucks
+
+    filmByID: assets.atlasMeta.filmByID,
   };
   return self;
 }
@@ -124,27 +125,16 @@ export namespace GreenField {
   export function onFrame(self: GreenField, delta: number): void {
     // Add elapsed time to the pending delta total.
     self.delta += delta;
+    self.pickHandled = false;
 
     while (self.delta >= self.tick) {
       self.delta -= self.tick;
 
-      const update: GFECSUpdate = {
-        filmByID: self.assets.atlasMeta.filmByID,
-        cam: self.cam,
-        ecs: self.ecs,
-        tick: self.tick,
-        input: self.input,
-        time: self.age,
-        instanceBuffer: self.instanceBuffer,
-        rendererStateMachine: self.rendererStateMachine,
-        cursor: self.cursor,
-      };
-
       self.input.preupdate();
 
-      processDebugInput(self, update);
+      processDebugInput(self);
 
-      ECS.update(self.ecs, update);
+      ECS.update(self.ecs, self);
 
       // should actual render be here and not in the ecs?
       self.input.postupdate(self.tick);
@@ -154,8 +144,8 @@ export namespace GreenField {
   }
 }
 
-function processDebugInput(self: GreenField, update: GFECSUpdate): void {
-  if (update.pickHandled) return;
+function processDebugInput(self: GreenField): void {
+  if (self.pickHandled) return;
   if (
     self.input.isComboStart(
       ['Up'],
@@ -171,17 +161,18 @@ function processDebugInput(self: GreenField, update: GFECSUpdate): void {
     )
   ) {
     Synth.play(Synth(), 'sawtooth', 200, 500, 0.15);
-    update.pickHandled = true;
+    self.pickHandled = true;
     console.log('combo');
   }
-  if (self.input.isOnStart('DebugContextLoss')) {
-    if (!self.rendererStateMachine.isContextLost()) {
-      update.pickHandled = true;
-      self.rendererStateMachine.loseContext();
-      setTimeout(
-        () => self.rendererStateMachine.restoreContext(),
-        3000,
-      );
-    }
+  if (
+    self.input.isOnStart('DebugContextLoss') &&
+    !self.rendererStateMachine.isContextLost()
+  ) {
+    self.pickHandled = true;
+    self.rendererStateMachine.loseContext();
+    setTimeout(
+      () => self.rendererStateMachine.restoreContext(),
+      3000,
+    );
   }
 }
