@@ -6,8 +6,8 @@ import {
   PickHealthAdderSystem,
   SpawnerSystem,
   SpriteFactory,
-} from '@/green-field';
-import { assertNonNull, I32, NonNull, Random } from '@/oidlib';
+} from '@/green-field'
+import { assertNonNull, I32, NonNull, Random } from '@/oidlib'
 import {
   Cam,
   CamSystem,
@@ -22,40 +22,40 @@ import {
   RenderSystem,
   Sprite,
   Synth,
-} from '@/void';
+} from '@/void'
 
 export interface GreenField extends GFECSUpdate { // class pls
-  readonly assets: Assets;
-  readonly canvas: HTMLCanvasElement;
-  readonly cam: Cam;
-  readonly ecs: ECS<GFComponentSet, GFECSUpdate>;
-  readonly input: Input;
-  readonly random: Random;
-  readonly rendererStateMachine: RendererStateMachine;
+  readonly assets: Assets
+  readonly canvas: HTMLCanvasElement
+  readonly cam: Cam
+  readonly ecs: ECS<GFComponentSet, GFECSUpdate>
+  readonly input: Input
+  readonly random: Random
+  readonly rendererStateMachine: RendererStateMachine
   /** The total number of ticks completed. ticks * tick = age. */
-  ticks: number;
+  ticks: number
   /**
    * The exact duration in milliseconds to apply each update. Any number of
    * updates may occur per animation frame.
    */
-  tick: number;
+  tick: number
   /** The outstanding time elapsed accrual to execute in milliseconds. */
-  delta: number;
-  readonly instanceBuffer: InstanceBuffer;
-  readonly cursor: Sprite;
+  delta: number
+  readonly instanceBuffer: InstanceBuffer
+  readonly cursor: Sprite
 }
 
 export function GreenField(
   window: Window,
   assets: Assets,
 ): GreenField {
-  const canvas = window.document.getElementsByTagName('canvas').item(0);
-  assertNonNull(canvas, 'Canvas missing.');
+  const canvas = window.document.getElementsByTagName('canvas').item(0)
+  assertNonNull(canvas, 'Canvas missing.')
 
-  const random = new Random(I32.mod(Date.now()));
+  const random = new Random(I32.mod(Date.now()))
 
   const newRenderer = () =>
-    Renderer(canvas, assets.atlas, assets.shaderLayout, assets.atlasMeta);
+    Renderer(canvas, assets.atlas, assets.shaderLayout, assets.atlasMeta)
 
   const ecs = ECS<GFComponentSet, GFECSUpdate>(
     new Set([
@@ -67,18 +67,18 @@ export function GreenField(
       new SpawnerSystem(),
       RenderSystem, // Last
     ]),
-  );
+  )
   ECS.addEnt(
     ecs,
     ...newLevelComponents(
       new SpriteFactory(assets.atlasMeta.filmByID),
     ) as GFComponentSet[], // to-do: fix types
-  );
-  ECS.flush(ecs);
+  )
+  ECS.flush(ecs)
 
-  const tick = 1000 / 60;
+  const tick = 1000 / 60
 
-  const cam = NonNull(ECS.query(ecs, 'cam')[0], 'Missing cam entity.').cam;
+  const cam = NonNull(ECS.query(ecs, 'cam')[0], 'Missing cam entity.').cam
   const self: GreenField = {
     assets,
     cam,
@@ -92,7 +92,7 @@ export function GreenField(
       canvas,
       onFrame: (delta) => GreenField.onFrame(self, delta),
       onPause: () => {
-        self.input.reset();
+        self.input.reset()
       },
       newRenderer,
     }),
@@ -100,56 +100,56 @@ export function GreenField(
     ticks: 0,
     delta: 0,
     get time() {
-      return this.tick * this.ticks;
+      return this.tick * this.ticks
     },
     cursor: ECS.query(ecs, 'cursor', 'sprite')![0]!.sprite, // this api sucks
 
     filmByID: assets.atlasMeta.filmByID,
-  };
-  return self;
+  }
+  return self
 }
 
 export namespace GreenField {
   export async function make(window: Window): Promise<GreenField> {
-    const assets = await Assets.load();
-    return GreenField(window, assets);
+    const assets = await Assets.load()
+    return GreenField(window, assets)
   }
 
   export function start(self: GreenField): void {
-    self.input.register('add');
-    self.rendererStateMachine.start();
+    self.input.register('add')
+    self.rendererStateMachine.start()
   }
 
   export function stop(self: GreenField): void {
-    self.input.register('remove');
-    self.rendererStateMachine.stop();
+    self.input.register('remove')
+    self.rendererStateMachine.stop()
     // win.close()
   }
 
   export function onFrame(self: GreenField, delta: number): void {
     // Add elapsed time to the pending delta total.
-    self.delta += delta;
-    self.pickHandled = false;
+    self.delta += delta
+    self.pickHandled = false
 
     while (self.delta >= self.tick) {
-      self.delta -= self.tick;
+      self.delta -= self.tick
 
-      self.input.preupdate();
+      self.input.preupdate()
 
-      processDebugInput(self);
+      processDebugInput(self)
 
-      ECS.update(self.ecs, self);
+      ECS.update(self.ecs, self)
 
       // should actual render be here and not in the ecs?
-      self.input.postupdate(self.tick);
+      self.input.postupdate(self.tick)
 
-      self.ticks++;
+      self.ticks++
     }
   }
 }
 
 function processDebugInput(self: GreenField): void {
-  if (self.pickHandled) return;
+  if (self.pickHandled) return
   if (
     self.input.isComboStart(
       ['Up'],
@@ -164,19 +164,19 @@ function processDebugInput(self: GreenField): void {
       ['Action'],
     )
   ) {
-    Synth.play(Synth(), 'sawtooth', 200, 500, 0.15);
-    self.pickHandled = true;
-    console.log('combo');
+    Synth.play(Synth(), 'sawtooth', 200, 500, 0.15)
+    self.pickHandled = true
+    console.log('combo')
   }
   if (
     self.input.isOnStart('DebugContextLoss') &&
     !self.rendererStateMachine.isContextLost()
   ) {
-    self.pickHandled = true;
-    self.rendererStateMachine.loseContext();
+    self.pickHandled = true
+    self.rendererStateMachine.loseContext()
     setTimeout(
       () => self.rendererStateMachine.restoreContext(),
       3000,
-    );
+    )
   }
 }

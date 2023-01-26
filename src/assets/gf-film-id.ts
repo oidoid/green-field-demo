@@ -1,4 +1,4 @@
-import { Immutable } from '@/oidlib';
+import { Immutable } from '@/oidlib'
 
 /**
  * The identifiers for all the films in the atlas. IDs are used to reference
@@ -6,7 +6,7 @@ import { Immutable } from '@/oidlib';
  * from the Atlas. The tag convention used here is
  * `<file stem>[-<state or variant>]*`.
  */
-export type GFFilmID = Parameters<typeof GFFilmID.values['has']>[0];
+export type GFFilmID = Parameters<typeof GFFilmID.values['has']>[0]
 
 export namespace GFFilmID {
   export const values = Immutable(
@@ -152,5 +152,5 @@ export namespace GFFilmID {
         'MemProp5x6-7f',
       ] as const,
     ),
-  );
+  )
 }

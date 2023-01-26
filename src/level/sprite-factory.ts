@@ -1,21 +1,21 @@
-import { FilmByID } from '@/atlas-pack';
-import { GFFilmID, GFLayer } from '@/green-field';
-import { U8 } from '@/oidlib';
-import { FilmLUT, Sprite, SpriteProps } from '@/void';
+import { FilmByID } from '@/atlas-pack'
+import { GFFilmID, GFLayer } from '@/green-field'
+import { U8 } from '@/oidlib'
+import { FilmLUT, Sprite, SpriteProps } from '@/void'
 
 export class SpriteFactory implements FilmLUT {
-  readonly #filmByID: FilmByID<GFFilmID>;
-  readonly layerByID: Readonly<{ [id in GFLayer]: U8 }> = GFLayer;
+  readonly #filmByID: FilmByID<GFFilmID>
+  readonly layerByID: Readonly<{ [id in GFLayer]: U8 }> = GFLayer
 
   get filmByID(): FilmByID<GFFilmID> {
-    return this.#filmByID;
+    return this.#filmByID
   }
 
   constructor(filmByID: FilmByID<GFFilmID>) {
-    this.#filmByID = filmByID;
+    this.#filmByID = filmByID
   }
 
   new(filmID: GFFilmID, layer: GFLayer, props?: SpriteProps): Sprite {
-    return new Sprite(this.#filmByID[filmID], GFLayer[layer], props);
+    return new Sprite(this.#filmByID[filmID], GFLayer[layer], props)
   }
 }

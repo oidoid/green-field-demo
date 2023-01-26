@@ -1,5 +1,5 @@
-import { I16 } from '@/oidlib';
+import { I16 } from '@/oidlib'
 
 export interface PickHealthAdder {
-  readonly delta: I16;
+  readonly delta: I16
 }
