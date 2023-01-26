@@ -17,7 +17,7 @@ export interface Assets {
 export namespace Assets {
   export async function load(): Promise<Assets> {
     const atlas = await ImageLoader.load('atlas.png');
-    const atlasMeta = atlasJSON as unknown as AtlasMeta<GFFilmID>;
+    const atlasMeta = AtlasMeta.fromJSON<GFFilmID>(atlasJSON);
     const shaderLayout = ShaderLayoutParser.parse(shaderLayoutConfig);
     return { atlas, atlasMeta, shaderLayout };
   }

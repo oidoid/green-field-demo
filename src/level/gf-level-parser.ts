@@ -1,4 +1,5 @@
 import { GFComponentSet, SpriteFactory } from '@/green-field';
+import { I16, U16 } from '@/oidlib';
 import { ComponentSetJSON, LevelParser } from '@/void';
 
 interface GFComponentSetJSON extends ComponentSetJSON {
@@ -29,6 +30,16 @@ function parseComponentSet(
       case '//':
       case 'name':
         break;
+      case 'health':
+        set.health = U16(val);
+        break;
+      case 'pickHealthAdder':
+        set.pickHealthAdder = { delta: I16(val.delta) };
+        break;
+      case 'spawner':
+        set.spawner = [];
+        break;
+
       default:
         throw Error(`Unsupported level config type "${key}".`);
     }

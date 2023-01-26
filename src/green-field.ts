@@ -3,6 +3,8 @@ import {
   GFComponentSet,
   GFECSUpdate,
   newLevelComponents,
+  PickHealthAdderSystem,
+  SpawnerSystem,
   SpriteFactory,
 } from '@/green-field';
 import { assertNonNull, I32, NonNull, Random } from '@/oidlib';
@@ -61,6 +63,8 @@ export function GreenField(
       FollowCamSystem,
       new CursorSystem(), // Process first
       FollowPointSystem,
+      new PickHealthAdderSystem(),
+      new SpawnerSystem(),
       RenderSystem, // Last
     ]),
   );

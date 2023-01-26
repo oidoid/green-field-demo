@@ -12,12 +12,16 @@ export namespace GFFilmID {
   export const values = Immutable(
     new Set(
       [
+        'BeeFly',
+        'BeeDead',
         'CursorPick',
         'CursorPoint',
+        'Flower',
         'PaletteAlpha',
         'PaletteDark',
         'PaletteLight',
         'PaletteMid',
+        'PaletteYellow',
         'MemProp5x6-00',
         'MemProp5x6-01',
         'MemProp5x6-02',
