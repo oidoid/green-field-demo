@@ -51,14 +51,9 @@
   },
 
   {
-    "name": "fps",
+    "name": "FPS",
     "fps": {},
-    "//": "to-do: use text",
-    "//": "to-do: would be great to make this a general purpose meter that could be paired with non-fps but things like ent count",
-    "sprites": [
-      { "id": "MemProp5x6-30", "layer": "Top", "x": 2, "y": 2 },
-      { "id": "MemProp5x6-30", "layer": "Top", "x": 6, "y": 2 },
-      { "id": "MemProp5x6-30", "layer": "Top", "x": 10, "y": 2 }
-    ]
+    "text": { "x": 2, "y": 2, "w": 128 },
+    "sprites": []
   }
 ]

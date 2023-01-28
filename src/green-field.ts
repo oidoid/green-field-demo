@@ -1,6 +1,5 @@
 import {
   Assets,
-  FPSSystem,
   GFComponentSet,
   GFECSUpdate,
   newLevelComponents,
@@ -10,34 +9,27 @@ import {
 } from '@/green-field'
 import { assertNonNull, I32, NonNull, Random } from '@/oidlib'
 import {
-  Cam,
   CamSystem,
   CursorSystem,
   ECS,
   FollowCamSystem,
   FollowPointSystem,
+  FPSSystem,
   Input,
   InstanceBuffer,
   Renderer,
   RendererStateMachine,
   RenderSystem,
-  Sprite,
   Synth,
+  TextSystem,
 } from '@/void'
 
 export interface GreenField extends GFECSUpdate { // class pls
   readonly assets: Assets
   readonly canvas: HTMLCanvasElement
-  readonly cam: Cam
   readonly ecs: ECS<GFComponentSet, GFECSUpdate>
-  readonly input: Input
-  readonly random: Random
-  readonly rendererStateMachine: RendererStateMachine
   tick: number
   time: number
-
-  readonly instanceBuffer: InstanceBuffer
-  readonly cursor: Sprite
 }
 
 export function GreenField(
@@ -58,6 +50,7 @@ export function GreenField(
       FollowCamSystem,
       new CursorSystem(), // Process first
       FollowPointSystem,
+      new TextSystem(),
       new FPSSystem(),
       new PickHealthAdderSystem(),
       new SpawnerSystem(),
@@ -68,6 +61,7 @@ export function GreenField(
     ecs,
     ...newLevelComponents(
       new SpriteFactory(assets.atlasMeta.filmByID),
+      assets.font,
     ) as GFComponentSet[], // to-do: fix types
   )
   ECS.flush(ecs)

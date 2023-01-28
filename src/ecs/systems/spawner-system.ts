@@ -10,8 +10,8 @@ export class SpawnerSystem implements System<SpawnerSet, GFECSUpdate> {
   query = new Set(['spawner'] as const)
 
   updateEnt(set: SpawnerSet, update: GFECSUpdate): void {
-    if (set.spawner.length >= 60_000) return
-    for (let i = 0; i < 5000; i++) {
+    if (set.spawner.length >= 600) return
+    for (let i = 0; i < 600; i++) {
       const ent = newBee(update)
       set.spawner.push(ent.sprites[0])
       ECS.addEnt(update.ecs, ent)

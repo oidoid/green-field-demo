@@ -1,6 +1,6 @@
 import { GFComponentSet, SpriteFactory } from '@/green-field'
-import { I16, U16, Uint } from '@/oidlib'
-import { ComponentSetJSON, LevelParser } from '@/void'
+import { I16, U16 } from '@/oidlib'
+import { ComponentSetJSON, Font, LevelParser } from '@/void'
 
 interface GFComponentSetJSON extends ComponentSetJSON {
 }
@@ -9,21 +9,24 @@ export namespace GFLevelParser {
   export function parse(
     factory: SpriteFactory,
     json: readonly GFComponentSetJSON[],
+    font: Font,
   ): Partial<GFComponentSet>[] {
-    return json.map((setJSON) => parseComponentSet(factory, setJSON))
+    return json.map((setJSON) => parseComponentSet(factory, setJSON, font))
   }
 }
 
 function parseComponentSet(
   factory: SpriteFactory,
   json: GFComponentSetJSON,
+  font: Font,
 ): Partial<GFComponentSet> {
-  const set: Partial<GFComponentSet> = {}
+  const set: Partial<
+    Record<keyof GFComponentSet, GFComponentSet[keyof GFComponentSet]>
+  > = {}
   for (const [key, val] of Object.entries(json)) {
-    const component = LevelParser.parseComponent(factory, key, val)
+    const component = LevelParser.parseComponent(factory, font, key, val)
     if (component != null) {
-      // deno-lint-ignore no-explicit-any
-      set[key as keyof GFComponentSetJSON] = component as any
+      set[key as keyof GFComponentSetJSON] = component
       continue
     }
     switch (key) { // to-do: fail when missing types.
@@ -39,15 +42,9 @@ function parseComponentSet(
       case 'spawner':
         set.spawner = []
         break
-      case 'fps':
-        set.fps = {
-          prev: 0,
-          next: { created: performance.now(), frames: Uint(0) },
-        }
-        break
       default:
         throw Error(`Unsupported level config type "${key}".`)
     }
   }
-  return set
+  return set as GFComponentSet
 }
