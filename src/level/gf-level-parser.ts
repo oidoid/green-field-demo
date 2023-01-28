@@ -1,5 +1,5 @@
 import { GFComponentSet, SpriteFactory } from '@/green-field'
-import { I16, U16 } from '@/oidlib'
+import { I16, U16, Uint } from '@/oidlib'
 import { ComponentSetJSON, LevelParser } from '@/void'
 
 interface GFComponentSetJSON extends ComponentSetJSON {
@@ -39,7 +39,12 @@ function parseComponentSet(
       case 'spawner':
         set.spawner = []
         break
-
+      case 'fps':
+        set.fps = {
+          prev: 0,
+          next: { created: performance.now(), frames: Uint(0) },
+        }
+        break
       default:
         throw Error(`Unsupported level config type "${key}".`)
     }

@@ -8,9 +8,19 @@
     "name": "cursor",
     "cursor": { "pick": "CursorPick", "point": "CursorPoint" },
     "followPoint": {},
-    "sprite": { "id": "CursorPoint", "layer": "Bottom" }
+    "sprites": [{ "id": "CursorPoint", "layer": "Bottom" }]
   },
 
+  {
+    "name": "flower",
+    "sprites": [{ "id": "Flower", "layer": "Top", "x": 60, "y": 50 }]
+  },
+
+  {
+    "name": "beehive",
+    "sprites": [{ "id": "Flower", "layer": "Top", "x": 10, "y": 50 }],
+    "spawner": {}
+  },
   {
     "name": "background",
     "followCam": {
@@ -18,29 +28,37 @@
       "orientation": "Northwest",
       "pad": { "x": 1, "y": 1 }
     },
-    "sprite": {
+    "sprites": [{
       "id": "PaletteYellow",
       "layer": "Background",
       "layerByHeight": true,
       "wrap": { "x": -1, "y": -1 }
-    }
+    }]
   },
 
   {
-    "name": "bee",
-    "sprite": { "id": "BeeFly", "layer": "Top", "x": 32, "y": 32 },
-    "health": 1,
-    "pickHealthAdder": { "delta": -1 }
+    "sprites": [
+      {
+        "id": "PaletteLight",
+        "layer": "Top",
+        "layerByHeight": true,
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 7
+      }
+    ]
   },
 
   {
-    "name": "flower",
-    "sprite": { "id": "Flower", "layer": "Top", "x": 60, "y": 50 }
-  },
-
-  {
-    "name": "beehive",
-    "sprite": { "id": "Flower", "layer": "Top", "x": 10, "y": 50 },
-    "spawner": {}
+    "name": "fps",
+    "fps": {},
+    "//": "to-do: use text",
+    "//": "to-do: would be great to make this a general purpose meter that could be paired with non-fps but things like ent count",
+    "sprites": [
+      { "id": "MemProp5x6-30", "layer": "Top", "x": 2, "y": 2 },
+      { "id": "MemProp5x6-30", "layer": "Top", "x": 6, "y": 2 },
+      { "id": "MemProp5x6-30", "layer": "Top", "x": 10, "y": 2 }
+    ]
   }
 ]

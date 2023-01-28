@@ -1,5 +1,6 @@
 import {
   Assets,
+  FPSSystem,
   GFComponentSet,
   GFECSUpdate,
   newLevelComponents,
@@ -32,15 +33,9 @@ export interface GreenField extends GFECSUpdate { // class pls
   readonly input: Input
   readonly random: Random
   readonly rendererStateMachine: RendererStateMachine
-  /** The total number of ticks completed. ticks * tick = age. */
-  ticks: number
-  /**
-   * The exact duration in milliseconds to apply each update. Any number of
-   * updates may occur per animation frame.
-   */
   tick: number
-  /** The outstanding time elapsed accrual to execute in milliseconds. */
-  delta: number
+  time: number
+
   readonly instanceBuffer: InstanceBuffer
   readonly cursor: Sprite
 }
@@ -63,6 +58,7 @@ export function GreenField(
       FollowCamSystem,
       new CursorSystem(), // Process first
       FollowPointSystem,
+      new FPSSystem(),
       new PickHealthAdderSystem(),
       new SpawnerSystem(),
       RenderSystem, // Last
@@ -75,8 +71,6 @@ export function GreenField(
     ) as GFComponentSet[], // to-do: fix types
   )
   ECS.flush(ecs)
-
-  const tick = 1000 / 60
 
   const cam = NonNull(ECS.query(ecs, 'cam')[0], 'Missing cam entity.').cam
   const self: GreenField = {
@@ -96,13 +90,9 @@ export function GreenField(
       },
       newRenderer,
     }),
-    tick,
-    ticks: 0,
-    delta: 0,
-    get time() {
-      return this.tick * this.ticks
-    },
-    cursor: ECS.query(ecs, 'cursor', 'sprite')![0]!.sprite, // this api sucks
+    tick: 1,
+    time: 0,
+    cursor: ECS.query(ecs, 'cursor', 'sprites')![0]!.sprites[0], // this api sucks
 
     filmByID: assets.atlasMeta.filmByID,
   }
@@ -127,24 +117,18 @@ export namespace GreenField {
   }
 
   export function onFrame(self: GreenField, delta: number): void {
-    // Add elapsed time to the pending delta total.
-    self.delta += delta
+    self.tick = delta
+    self.time += delta
     self.pickHandled = false
 
-    while (self.delta >= self.tick) {
-      self.delta -= self.tick
+    self.input.preupdate()
 
-      self.input.preupdate()
+    processDebugInput(self)
 
-      processDebugInput(self)
+    ECS.update(self.ecs, self)
 
-      ECS.update(self.ecs, self)
-
-      // should actual render be here and not in the ecs?
-      self.input.postupdate(self.tick)
-
-      self.ticks++
-    }
+    // should actual render be here and not in the ecs?
+    self.input.postupdate(self.tick)
   }
 }
 
