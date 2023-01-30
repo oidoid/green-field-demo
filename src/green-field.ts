@@ -46,7 +46,7 @@ export function GreenField(
 
   const ecs = ECS<GFComponentSet, GFECSUpdate>(
     new Set([
-      CamSystem,
+      new CamSystem(),
       FollowCamSystem,
       new CursorSystem(), // Process first
       FollowPointSystem,
