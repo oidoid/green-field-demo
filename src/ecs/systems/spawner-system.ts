@@ -1,5 +1,5 @@
 import { GFEnt, GFLayer, GFRunState } from '@/green-field'
-import { I16 } from '@/oidlib'
+import { I16 } from '@/ooz'
 import { QueryToEnt, Sprite, System } from '@/void'
 
 export type SpawnerEnt = QueryToEnt<

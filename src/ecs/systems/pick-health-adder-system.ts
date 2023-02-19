@@ -1,5 +1,5 @@
 import { GFEnt, GFRunState, PickHealthAdder } from '@/green-field'
-import { U16 } from '@/oidlib'
+import { U16 } from '@/ooz'
 import { QueryToEnt, Sprite, System } from '@/void'
 
 export type PickHealthAdderEnt = QueryToEnt<

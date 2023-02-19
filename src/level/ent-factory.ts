@@ -1,5 +1,5 @@
 import { GFEnt, GFLevelParser, level, SpriteFactory } from '@/green-field'
-import { I16 } from '@/oidlib'
+import { I16 } from '@/ooz'
 import { Font } from '@/void'
 
 export function newLevelComponents(

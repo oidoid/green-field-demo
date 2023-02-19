@@ -7,7 +7,7 @@ import {
   SpawnerSystem,
   SpriteFactory,
 } from '@/green-field'
-import { assertNonNull, NonNull } from '@/oidlib'
+import { assertNonNull, NonNull } from '@/ooz'
 import {
   CamSystem,
   CursorSystem,

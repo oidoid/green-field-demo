@@ -1,7 +1,7 @@
 import { AtlasMeta } from '@/atlas-pack'
 import { atlasJSON, GFFilmID } from '@/green-field'
 import { memProp5x6 } from '@/mem'
-import { I16 } from '@/oidlib'
+import { I16 } from '@/ooz'
 import {
   Font,
   FontParser,

@@ -1,4 +1,4 @@
-import { Immutable, Inverse, U8 } from '@/oidlib'
+import { Immutable, Inverse, U8 } from '@/ooz'
 import { Layer } from '@/void'
 
 export const GFLayer = Immutable({

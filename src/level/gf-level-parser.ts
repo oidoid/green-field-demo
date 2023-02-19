@@ -1,5 +1,5 @@
 import { GFEnt, SpriteFactory } from '@/green-field'
-import { I16, U16 } from '@/oidlib'
+import { I16, U16 } from '@/ooz'
 import { Font, LevelParser, VoidEntJSON } from '@/void'
 
 interface GFEntJSON extends VoidEntJSON {

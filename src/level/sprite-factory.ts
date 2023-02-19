@@ -1,6 +1,6 @@
 import { FilmByID } from '@/atlas-pack'
 import { GFFilmID, GFLayer } from '@/green-field'
-import { U8 } from '@/oidlib'
+import { U8 } from '@/ooz'
 import { FilmLUT, Sprite, SpriteProps } from '@/void'
 
 export class SpriteFactory implements FilmLUT {
