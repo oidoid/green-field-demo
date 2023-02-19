@@ -1,13 +1,13 @@
 import {
   Assets,
-  GFComponentSet,
-  GFECSUpdate,
+  GFEnt,
+  GFRunState,
   newLevelComponents,
   PickHealthAdderSystem,
   SpawnerSystem,
   SpriteFactory,
 } from '@/green-field'
-import { assertNonNull, I32, NonNull, Random } from '@/oidlib'
+import { assertNonNull, NonNull } from '@/oidlib'
 import {
   CamSystem,
   CursorSystem,
@@ -24,10 +24,10 @@ import {
   TextSystem,
 } from '@/void'
 
-export interface GreenField extends GFECSUpdate { // class pls
+export interface GreenField extends GFRunState { // class pls
   readonly assets: Assets
   readonly canvas: HTMLCanvasElement
-  readonly ecs: ECS<GFComponentSet, GFECSUpdate>
+  readonly ecs: ECS<GFEnt>
   tick: number
   time: number
 }
@@ -39,34 +39,32 @@ export function GreenField(
   const canvas = window.document.getElementsByTagName('canvas').item(0)
   assertNonNull(canvas, 'Canvas missing.')
 
-  const random = new Random(I32.mod(Date.now()))
+  const random = Math.random
 
   const newRenderer = () =>
     Renderer(canvas, assets.atlas, assets.shaderLayout, assets.atlasMeta)
 
-  const ecs = ECS<GFComponentSet, GFECSUpdate>(
-    new Set([
-      new CamSystem(),
-      FollowCamSystem,
-      new CursorSystem(), // Process first
-      FollowPointSystem,
-      new TextSystem(),
-      new FPSSystem(),
-      new PickHealthAdderSystem(),
-      new SpawnerSystem(),
-      RenderSystem, // Last
-    ]),
+  const ecs = new ECS<GFEnt>()
+  ecs.addSystem(
+    new CamSystem(),
+    new FollowCamSystem(),
+    new CursorSystem(),
+    new FollowPointSystem(),
+    new TextSystem(),
+    new FPSSystem(),
+    new PickHealthAdderSystem(),
+    new SpawnerSystem(),
+    new RenderSystem(),
   )
-  ECS.addEnt(
-    ecs,
+  ecs.addEnt(
     ...newLevelComponents(
       new SpriteFactory(assets.atlasMeta.filmByID),
       assets.font,
-    ) as GFComponentSet[], // to-do: fix types
+    ) as GFEnt[], // to-do: fix types
   )
-  ECS.flush(ecs)
+  ecs.patch()
 
-  const cam = NonNull(ECS.query(ecs, 'cam')[0], 'Missing cam entity.').cam
+  const cam = NonNull(ecs.query('cam')[0], 'Missing cam entity.').cam
   const self: GreenField = {
     assets,
     cam,
@@ -79,15 +77,12 @@ export function GreenField(
       window,
       canvas,
       onFrame: (delta) => GreenField.onFrame(self, delta),
-      onPause: () => {
-        self.input.reset()
-      },
+      onPause: () => self.input.reset(),
       newRenderer,
     }),
     tick: 1,
     time: 0,
-    cursor: ECS.query(ecs, 'cursor', 'sprites')![0]!.sprites[0], // this api sucks
-
+    cursor: ecs.query('cursor & sprite')[0]!.sprite,
     filmByID: assets.atlasMeta.filmByID,
   }
   return self
@@ -119,7 +114,7 @@ export namespace GreenField {
 
     processDebugInput(self)
 
-    ECS.update(self.ecs, self)
+    self.ecs.run(self)
 
     // should actual render be here and not in the ecs?
     self.input.postupdate(self.tick)

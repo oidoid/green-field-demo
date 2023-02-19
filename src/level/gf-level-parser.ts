@@ -1,32 +1,32 @@
-import { GFComponentSet, SpriteFactory } from '@/green-field'
+import { GFEnt, SpriteFactory } from '@/green-field'
 import { I16, U16 } from '@/oidlib'
-import { ComponentSetJSON, Font, LevelParser } from '@/void'
+import { Font, LevelParser, VoidEntJSON } from '@/void'
 
-interface GFComponentSetJSON extends ComponentSetJSON {
+interface GFEntJSON extends VoidEntJSON {
 }
 
 export namespace GFLevelParser {
   export function parse(
     factory: SpriteFactory,
-    json: readonly GFComponentSetJSON[],
+    json: readonly GFEntJSON[],
     font: Font,
-  ): Partial<GFComponentSet>[] {
+  ): Partial<GFEnt>[] {
     return json.map((setJSON) => parseComponentSet(factory, setJSON, font))
   }
 }
 
 function parseComponentSet(
   factory: SpriteFactory,
-  json: GFComponentSetJSON,
+  json: GFEntJSON,
   font: Font,
-): Partial<GFComponentSet> {
+): Partial<GFEnt> {
   const set: Partial<
-    Record<keyof GFComponentSet, GFComponentSet[keyof GFComponentSet]>
+    Record<keyof GFEnt, GFEnt[keyof GFEnt]>
   > = {}
   for (const [key, val] of Object.entries(json)) {
     const component = LevelParser.parseComponent(factory, font, key, val)
     if (component != null) {
-      set[key as keyof GFComponentSetJSON] = component
+      set[key as keyof GFEntJSON] = component
       continue
     }
     switch (key) { // to-do: fail when missing types.
@@ -34,17 +34,17 @@ function parseComponentSet(
       case 'name':
         break
       case 'health':
-        set.health = U16(val)
+        set.health = { health: U16(val) }
         break
       case 'pickHealthAdder':
         set.pickHealthAdder = { delta: I16(val.delta) }
         break
       case 'spawner':
-        set.spawner = []
+        set.spawner = {}
         break
       default:
         throw Error(`Unsupported level config type "${key}".`)
     }
   }
-  return set as GFComponentSet
+  return set as GFEnt
 }

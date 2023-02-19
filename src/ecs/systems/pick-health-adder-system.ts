@@ -1,34 +1,39 @@
-import { GFECSUpdate, PickHealthAdder } from '@/green-field'
+import { GFEnt, GFRunState, PickHealthAdder } from '@/green-field'
 import { U16 } from '@/oidlib'
-import { Sprite, System } from '@/void'
+import { QueryToEnt, Sprite, System } from '@/void'
 
-export interface PickHealthAdderSet {
-  health: U16
-  pickHealthAdder: PickHealthAdder
-  sprites: [Sprite, ...Sprite[]]
-}
+export type PickHealthAdderEnt = QueryToEnt<
+  {
+    health: { health: U16 }
+    pickHealthAdder: PickHealthAdder
+    sprite: Sprite
+  },
+  typeof query
+>
+
+const query = 'health & pickHealthAdder & sprite'
 
 export class PickHealthAdderSystem
-  implements System<PickHealthAdderSet, GFECSUpdate> {
-  query = new Set(['health', 'pickHealthAdder', 'sprites'] as const)
+  implements System<PickHealthAdderEnt, GFEnt> {
+  readonly query = query
 
-  skip(update: GFECSUpdate): boolean {
-    return update.pickHandled || !update.input.isOnStart('Action')
-  }
+  run(ents: ReadonlySet<PickHealthAdderEnt>, state: GFRunState): void {
+    if (state.pickHandled || !state.input.isOnStart('Action')) return
+    for (const ent of ents) {
+      if (state.pickHandled) continue
+      if (ent.health.health == 0) continue
+      if (!state.cursor.intersectsSprite(ent.sprite, state.time)) continue
 
-  updateEnt(set: PickHealthAdderSet, update: GFECSUpdate): void {
-    if (update.pickHandled) return
-    if (set.health == 0) return
+      ent.health.health = U16.trunc(
+        ent.health.health + ent.pickHealthAdder.delta,
+      )
 
-    if (!update.cursor.intersectsSprite(set.sprites[0], update.time)) return
+      // to-do: health system
+      // to-do: ability to delete component here
+      // if (set.health == 0)
+      ent.sprite.animate(state.time, state.filmByID.BeeDead)
 
-    set.health = U16.trunc(set.health + set.pickHealthAdder.delta)
-
-    // to-do: health system
-    // to-do: ability to delete component here
-    // if (set.health == 0)
-    set.sprites[0].animate(update.time, update.filmByID.BeeDead)
-
-    update.pickHandled = true
+      state.pickHandled = true
+    }
   }
 }

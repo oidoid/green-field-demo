@@ -1,16 +1,11 @@
-import {
-  GFComponentSet,
-  GFLevelParser,
-  level,
-  SpriteFactory,
-} from '@/green-field'
+import { GFEnt, GFLevelParser, level, SpriteFactory } from '@/green-field'
 import { I16 } from '@/oidlib'
 import { Font } from '@/void'
 
 export function newLevelComponents(
   factory: SpriteFactory,
   font: Font<I16>,
-): Partial<GFComponentSet>[] {
+): Partial<GFEnt>[] {
   // to-do: detect mobile platforms and hide cursor initially.
   // to-do: limit cursor movement to play area.
 
