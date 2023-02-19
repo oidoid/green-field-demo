@@ -110,3 +110,13 @@ clean:
     '$(assets_dir)/atlas.json' \
     '$(assets_dir)/atlas.png' \
     '$(atlas_assets_dir)/font.aseprite'
+
+.PHONY: rebuild
+rebuild:
+  $(make) clean
+  $(make) build
+
+.PHONY: retest
+retest:
+  $(make) clean
+  $(make) test
