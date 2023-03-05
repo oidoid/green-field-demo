@@ -1,5 +1,5 @@
 {
-  "version": "1.3-beta21-x64",
+  "version": "1.3-rc1-x64",
   "filename": "atlas.png",
   "format": "RGBA8888",
   "wh": {
@@ -7,8 +7,8 @@
     "y": 203
   },
   "filmByID": {
-    "Checkerboard": {
-      "id": "Checkerboard",
+    "background--Checkerboard": {
+      "id": "background--Checkerboard",
       "wh": {
         "x": 8,
         "y": 8
@@ -21,7 +21,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -31,12 +31,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "Grid": {
-      "id": "Grid",
+    "background--Grid": {
+      "id": "background--Grid",
       "wh": {
         "x": 8,
         "y": 8
@@ -49,7 +50,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -59,12 +60,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "Corner": {
-      "id": "Corner",
+    "background--Corner": {
+      "id": "background--Corner",
       "wh": {
         "x": 8,
         "y": 8
@@ -77,7 +79,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -87,12 +89,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "BeeFly": {
-      "id": "BeeFly",
+    "bee--Fly": {
+      "id": "bee--Fly",
       "wh": {
         "x": 5,
         "y": 6
@@ -170,10 +173,11 @@
       ],
       "period": 120,
       "duration": 360,
-      "direction": "Forward"
+      "direction": "Forward",
+      "loops": null
     },
-    "BeeDead": {
-      "id": "BeeDead",
+    "bee--Dead": {
+      "id": "bee--Dead",
       "wh": {
         "x": 5,
         "y": 6
@@ -186,7 +190,7 @@
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -196,12 +200,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "CursorPoint": {
-      "id": "CursorPoint",
+    "cursor--Point": {
+      "id": "cursor--Point",
       "wh": {
         "x": 16,
         "y": 16
@@ -214,7 +219,7 @@
             "w": 16,
             "h": 16
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "w": 3,
             "h": 3
@@ -227,12 +232,13 @@
           ]
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "CursorPick": {
-      "id": "CursorPick",
+    "cursor--Pick": {
+      "id": "cursor--Pick",
       "wh": {
         "x": 16,
         "y": 16
@@ -245,7 +251,7 @@
             "w": 16,
             "h": 16
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "w": 3,
             "h": 3
@@ -258,12 +264,13 @@
           ]
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "Flower": {
-      "id": "Flower",
+    "flower--Flower": {
+      "id": "flower--Flower",
       "wh": {
         "x": 5,
         "y": 6
@@ -272,11 +279,12 @@
         {
           "id": 8,
           "bounds": {
-            "x": 533,
+            "x": 369,
+            "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -286,12 +294,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-00": {
-      "id": "MemProp5x6-00",
+    "mem-prop-5x6--00": {
+      "id": "mem-prop-5x6--00",
       "wh": {
         "x": 5,
         "y": 6
@@ -300,12 +309,12 @@
         {
           "id": 9,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -315,12 +324,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-01": {
-      "id": "MemProp5x6-01",
+    "mem-prop-5x6--01": {
+      "id": "mem-prop-5x6--01",
       "wh": {
         "x": 5,
         "y": 6
@@ -329,12 +339,12 @@
         {
           "id": 10,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -344,12 +354,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-02": {
-      "id": "MemProp5x6-02",
+    "mem-prop-5x6--02": {
+      "id": "mem-prop-5x6--02",
       "wh": {
         "x": 5,
         "y": 6
@@ -358,12 +369,12 @@
         {
           "id": 11,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -373,12 +384,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-03": {
-      "id": "MemProp5x6-03",
+    "mem-prop-5x6--03": {
+      "id": "mem-prop-5x6--03",
       "wh": {
         "x": 5,
         "y": 6
@@ -387,12 +399,12 @@
         {
           "id": 12,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -402,12 +414,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-04": {
-      "id": "MemProp5x6-04",
+    "mem-prop-5x6--04": {
+      "id": "mem-prop-5x6--04",
       "wh": {
         "x": 5,
         "y": 6
@@ -416,12 +429,12 @@
         {
           "id": 13,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -431,12 +444,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-05": {
-      "id": "MemProp5x6-05",
+    "mem-prop-5x6--05": {
+      "id": "mem-prop-5x6--05",
       "wh": {
         "x": 5,
         "y": 6
@@ -445,12 +459,12 @@
         {
           "id": 14,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -460,12 +474,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-06": {
-      "id": "MemProp5x6-06",
+    "mem-prop-5x6--06": {
+      "id": "mem-prop-5x6--06",
       "wh": {
         "x": 5,
         "y": 6
@@ -474,12 +489,12 @@
         {
           "id": 15,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -489,12 +504,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-07": {
-      "id": "MemProp5x6-07",
+    "mem-prop-5x6--07": {
+      "id": "mem-prop-5x6--07",
       "wh": {
         "x": 5,
         "y": 6
@@ -503,12 +519,12 @@
         {
           "id": 16,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -518,12 +534,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-08": {
-      "id": "MemProp5x6-08",
+    "mem-prop-5x6--08": {
+      "id": "mem-prop-5x6--08",
       "wh": {
         "x": 5,
         "y": 6
@@ -532,12 +549,12 @@
         {
           "id": 17,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -547,12 +564,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-09": {
-      "id": "MemProp5x6-09",
+    "mem-prop-5x6--09": {
+      "id": "mem-prop-5x6--09",
       "wh": {
         "x": 5,
         "y": 6
@@ -561,12 +579,12 @@
         {
           "id": 18,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -576,12 +594,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-0a": {
-      "id": "MemProp5x6-0a",
+    "mem-prop-5x6--0a": {
+      "id": "mem-prop-5x6--0a",
       "wh": {
         "x": 5,
         "y": 6
@@ -590,12 +609,12 @@
         {
           "id": 19,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -605,12 +624,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-0b": {
-      "id": "MemProp5x6-0b",
+    "mem-prop-5x6--0b": {
+      "id": "mem-prop-5x6--0b",
       "wh": {
         "x": 5,
         "y": 6
@@ -619,12 +639,12 @@
         {
           "id": 20,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -634,12 +654,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-0c": {
-      "id": "MemProp5x6-0c",
+    "mem-prop-5x6--0c": {
+      "id": "mem-prop-5x6--0c",
       "wh": {
         "x": 5,
         "y": 6
@@ -648,12 +669,12 @@
         {
           "id": 21,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -663,12 +684,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-0d": {
-      "id": "MemProp5x6-0d",
+    "mem-prop-5x6--0d": {
+      "id": "mem-prop-5x6--0d",
       "wh": {
         "x": 5,
         "y": 6
@@ -677,12 +699,12 @@
         {
           "id": 22,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -692,12 +714,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-0e": {
-      "id": "MemProp5x6-0e",
+    "mem-prop-5x6--0e": {
+      "id": "mem-prop-5x6--0e",
       "wh": {
         "x": 5,
         "y": 6
@@ -706,12 +729,12 @@
         {
           "id": 23,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -721,12 +744,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-0f": {
-      "id": "MemProp5x6-0f",
+    "mem-prop-5x6--0f": {
+      "id": "mem-prop-5x6--0f",
       "wh": {
         "x": 5,
         "y": 6
@@ -735,12 +759,12 @@
         {
           "id": 24,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -750,12 +774,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-10": {
-      "id": "MemProp5x6-10",
+    "mem-prop-5x6--10": {
+      "id": "mem-prop-5x6--10",
       "wh": {
         "x": 5,
         "y": 6
@@ -764,12 +789,12 @@
         {
           "id": 25,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -779,12 +804,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-11": {
-      "id": "MemProp5x6-11",
+    "mem-prop-5x6--11": {
+      "id": "mem-prop-5x6--11",
       "wh": {
         "x": 5,
         "y": 6
@@ -793,12 +819,12 @@
         {
           "id": 26,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -808,12 +834,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-12": {
-      "id": "MemProp5x6-12",
+    "mem-prop-5x6--12": {
+      "id": "mem-prop-5x6--12",
       "wh": {
         "x": 5,
         "y": 6
@@ -822,12 +849,12 @@
         {
           "id": 27,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -837,12 +864,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-13": {
-      "id": "MemProp5x6-13",
+    "mem-prop-5x6--13": {
+      "id": "mem-prop-5x6--13",
       "wh": {
         "x": 5,
         "y": 6
@@ -851,12 +879,12 @@
         {
           "id": 28,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -866,12 +894,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-14": {
-      "id": "MemProp5x6-14",
+    "mem-prop-5x6--14": {
+      "id": "mem-prop-5x6--14",
       "wh": {
         "x": 5,
         "y": 6
@@ -880,12 +909,12 @@
         {
           "id": 29,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -895,12 +924,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-15": {
-      "id": "MemProp5x6-15",
+    "mem-prop-5x6--15": {
+      "id": "mem-prop-5x6--15",
       "wh": {
         "x": 5,
         "y": 6
@@ -909,12 +939,12 @@
         {
           "id": 30,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -924,12 +954,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-16": {
-      "id": "MemProp5x6-16",
+    "mem-prop-5x6--16": {
+      "id": "mem-prop-5x6--16",
       "wh": {
         "x": 5,
         "y": 6
@@ -938,12 +969,12 @@
         {
           "id": 31,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -953,12 +984,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-17": {
-      "id": "MemProp5x6-17",
+    "mem-prop-5x6--17": {
+      "id": "mem-prop-5x6--17",
       "wh": {
         "x": 5,
         "y": 6
@@ -967,12 +999,12 @@
         {
           "id": 32,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -982,12 +1014,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-18": {
-      "id": "MemProp5x6-18",
+    "mem-prop-5x6--18": {
+      "id": "mem-prop-5x6--18",
       "wh": {
         "x": 5,
         "y": 6
@@ -996,12 +1029,12 @@
         {
           "id": 33,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1011,12 +1044,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-19": {
-      "id": "MemProp5x6-19",
+    "mem-prop-5x6--19": {
+      "id": "mem-prop-5x6--19",
       "wh": {
         "x": 5,
         "y": 6
@@ -1025,12 +1059,12 @@
         {
           "id": 34,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1040,12 +1074,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-1a": {
-      "id": "MemProp5x6-1a",
+    "mem-prop-5x6--1a": {
+      "id": "mem-prop-5x6--1a",
       "wh": {
         "x": 5,
         "y": 6
@@ -1054,12 +1089,12 @@
         {
           "id": 35,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1069,12 +1104,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-1b": {
-      "id": "MemProp5x6-1b",
+    "mem-prop-5x6--1b": {
+      "id": "mem-prop-5x6--1b",
       "wh": {
         "x": 5,
         "y": 6
@@ -1083,12 +1119,12 @@
         {
           "id": 36,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1098,12 +1134,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-1c": {
-      "id": "MemProp5x6-1c",
+    "mem-prop-5x6--1c": {
+      "id": "mem-prop-5x6--1c",
       "wh": {
         "x": 5,
         "y": 6
@@ -1112,12 +1149,12 @@
         {
           "id": 37,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1127,12 +1164,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-1d": {
-      "id": "MemProp5x6-1d",
+    "mem-prop-5x6--1d": {
+      "id": "mem-prop-5x6--1d",
       "wh": {
         "x": 5,
         "y": 6
@@ -1141,12 +1179,12 @@
         {
           "id": 38,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1156,12 +1194,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-1e": {
-      "id": "MemProp5x6-1e",
+    "mem-prop-5x6--1e": {
+      "id": "mem-prop-5x6--1e",
       "wh": {
         "x": 5,
         "y": 6
@@ -1170,12 +1209,12 @@
         {
           "id": 39,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1185,12 +1224,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-1f": {
-      "id": "MemProp5x6-1f",
+    "mem-prop-5x6--1f": {
+      "id": "mem-prop-5x6--1f",
       "wh": {
         "x": 5,
         "y": 6
@@ -1199,12 +1239,12 @@
         {
           "id": 40,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1214,12 +1254,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-20": {
-      "id": "MemProp5x6-20",
+    "mem-prop-5x6--20": {
+      "id": "mem-prop-5x6--20",
       "wh": {
         "x": 5,
         "y": 6
@@ -1228,12 +1269,12 @@
         {
           "id": 41,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1243,12 +1284,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-21": {
-      "id": "MemProp5x6-21",
+    "mem-prop-5x6--21": {
+      "id": "mem-prop-5x6--21",
       "wh": {
         "x": 5,
         "y": 6
@@ -1257,12 +1299,12 @@
         {
           "id": 42,
           "bounds": {
-            "x": 558,
+            "x": 553,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1272,12 +1314,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-22": {
-      "id": "MemProp5x6-22",
+    "mem-prop-5x6--22": {
+      "id": "mem-prop-5x6--22",
       "wh": {
         "x": 5,
         "y": 6
@@ -1286,12 +1329,12 @@
         {
           "id": 43,
           "bounds": {
-            "x": 553,
+            "x": 548,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1301,12 +1344,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-23": {
-      "id": "MemProp5x6-23",
+    "mem-prop-5x6--23": {
+      "id": "mem-prop-5x6--23",
       "wh": {
         "x": 5,
         "y": 6
@@ -1315,12 +1359,12 @@
         {
           "id": 44,
           "bounds": {
-            "x": 548,
+            "x": 543,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1330,12 +1374,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-24": {
-      "id": "MemProp5x6-24",
+    "mem-prop-5x6--24": {
+      "id": "mem-prop-5x6--24",
       "wh": {
         "x": 5,
         "y": 6
@@ -1344,12 +1389,12 @@
         {
           "id": 45,
           "bounds": {
-            "x": 543,
+            "x": 538,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1359,12 +1404,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-25": {
-      "id": "MemProp5x6-25",
+    "mem-prop-5x6--25": {
+      "id": "mem-prop-5x6--25",
       "wh": {
         "x": 5,
         "y": 6
@@ -1373,12 +1419,12 @@
         {
           "id": 46,
           "bounds": {
-            "x": 538,
+            "x": 533,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1388,12 +1434,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-26": {
-      "id": "MemProp5x6-26",
+    "mem-prop-5x6--26": {
+      "id": "mem-prop-5x6--26",
       "wh": {
         "x": 5,
         "y": 6
@@ -1402,12 +1449,12 @@
         {
           "id": 47,
           "bounds": {
-            "x": 533,
+            "x": 528,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1417,12 +1464,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-27": {
-      "id": "MemProp5x6-27",
+    "mem-prop-5x6--27": {
+      "id": "mem-prop-5x6--27",
       "wh": {
         "x": 5,
         "y": 6
@@ -1431,12 +1479,12 @@
         {
           "id": 48,
           "bounds": {
-            "x": 528,
+            "x": 523,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1446,12 +1494,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-28": {
-      "id": "MemProp5x6-28",
+    "mem-prop-5x6--28": {
+      "id": "mem-prop-5x6--28",
       "wh": {
         "x": 5,
         "y": 6
@@ -1460,12 +1509,12 @@
         {
           "id": 49,
           "bounds": {
-            "x": 523,
+            "x": 518,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1475,12 +1524,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-29": {
-      "id": "MemProp5x6-29",
+    "mem-prop-5x6--29": {
+      "id": "mem-prop-5x6--29",
       "wh": {
         "x": 5,
         "y": 6
@@ -1489,12 +1539,12 @@
         {
           "id": 50,
           "bounds": {
-            "x": 518,
+            "x": 513,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1504,12 +1554,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-2a": {
-      "id": "MemProp5x6-2a",
+    "mem-prop-5x6--2a": {
+      "id": "mem-prop-5x6--2a",
       "wh": {
         "x": 5,
         "y": 6
@@ -1518,12 +1569,12 @@
         {
           "id": 51,
           "bounds": {
-            "x": 513,
+            "x": 508,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1533,12 +1584,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-2b": {
-      "id": "MemProp5x6-2b",
+    "mem-prop-5x6--2b": {
+      "id": "mem-prop-5x6--2b",
       "wh": {
         "x": 5,
         "y": 6
@@ -1547,12 +1599,12 @@
         {
           "id": 52,
           "bounds": {
-            "x": 508,
+            "x": 438,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1562,12 +1614,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-2c": {
-      "id": "MemProp5x6-2c",
+    "mem-prop-5x6--2c": {
+      "id": "mem-prop-5x6--2c",
       "wh": {
         "x": 5,
         "y": 6
@@ -1576,12 +1629,12 @@
         {
           "id": 53,
           "bounds": {
-            "x": 438,
+            "x": 498,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1591,12 +1644,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-2d": {
-      "id": "MemProp5x6-2d",
+    "mem-prop-5x6--2d": {
+      "id": "mem-prop-5x6--2d",
       "wh": {
         "x": 5,
         "y": 6
@@ -1605,12 +1659,12 @@
         {
           "id": 54,
           "bounds": {
-            "x": 498,
+            "x": 493,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1620,12 +1674,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-2e": {
-      "id": "MemProp5x6-2e",
+    "mem-prop-5x6--2e": {
+      "id": "mem-prop-5x6--2e",
       "wh": {
         "x": 5,
         "y": 6
@@ -1634,12 +1689,12 @@
         {
           "id": 55,
           "bounds": {
-            "x": 493,
+            "x": 488,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1649,12 +1704,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-2f": {
-      "id": "MemProp5x6-2f",
+    "mem-prop-5x6--2f": {
+      "id": "mem-prop-5x6--2f",
       "wh": {
         "x": 5,
         "y": 6
@@ -1663,12 +1719,12 @@
         {
           "id": 56,
           "bounds": {
-            "x": 488,
+            "x": 483,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1678,12 +1734,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-30": {
-      "id": "MemProp5x6-30",
+    "mem-prop-5x6--30": {
+      "id": "mem-prop-5x6--30",
       "wh": {
         "x": 5,
         "y": 6
@@ -1692,12 +1749,12 @@
         {
           "id": 57,
           "bounds": {
-            "x": 483,
+            "x": 478,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1707,12 +1764,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-31": {
-      "id": "MemProp5x6-31",
+    "mem-prop-5x6--31": {
+      "id": "mem-prop-5x6--31",
       "wh": {
         "x": 5,
         "y": 6
@@ -1721,12 +1779,12 @@
         {
           "id": 58,
           "bounds": {
-            "x": 478,
+            "x": 473,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1736,12 +1794,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-32": {
-      "id": "MemProp5x6-32",
+    "mem-prop-5x6--32": {
+      "id": "mem-prop-5x6--32",
       "wh": {
         "x": 5,
         "y": 6
@@ -1750,12 +1809,12 @@
         {
           "id": 59,
           "bounds": {
-            "x": 473,
+            "x": 468,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1765,12 +1824,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-33": {
-      "id": "MemProp5x6-33",
+    "mem-prop-5x6--33": {
+      "id": "mem-prop-5x6--33",
       "wh": {
         "x": 5,
         "y": 6
@@ -1779,12 +1839,12 @@
         {
           "id": 60,
           "bounds": {
-            "x": 468,
+            "x": 463,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1794,12 +1854,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-34": {
-      "id": "MemProp5x6-34",
+    "mem-prop-5x6--34": {
+      "id": "mem-prop-5x6--34",
       "wh": {
         "x": 5,
         "y": 6
@@ -1808,12 +1869,12 @@
         {
           "id": 61,
           "bounds": {
-            "x": 463,
+            "x": 458,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1823,12 +1884,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-35": {
-      "id": "MemProp5x6-35",
+    "mem-prop-5x6--35": {
+      "id": "mem-prop-5x6--35",
       "wh": {
         "x": 5,
         "y": 6
@@ -1837,12 +1899,12 @@
         {
           "id": 62,
           "bounds": {
-            "x": 458,
+            "x": 453,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1852,12 +1914,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-36": {
-      "id": "MemProp5x6-36",
+    "mem-prop-5x6--36": {
+      "id": "mem-prop-5x6--36",
       "wh": {
         "x": 5,
         "y": 6
@@ -1866,12 +1929,12 @@
         {
           "id": 63,
           "bounds": {
-            "x": 453,
+            "x": 448,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1881,12 +1944,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-37": {
-      "id": "MemProp5x6-37",
+    "mem-prop-5x6--37": {
+      "id": "mem-prop-5x6--37",
       "wh": {
         "x": 5,
         "y": 6
@@ -1895,12 +1959,12 @@
         {
           "id": 64,
           "bounds": {
-            "x": 448,
+            "x": 443,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1910,12 +1974,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-38": {
-      "id": "MemProp5x6-38",
+    "mem-prop-5x6--38": {
+      "id": "mem-prop-5x6--38",
       "wh": {
         "x": 5,
         "y": 6
@@ -1924,12 +1989,12 @@
         {
           "id": 65,
           "bounds": {
-            "x": 443,
+            "x": 503,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1939,12 +2004,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-39": {
-      "id": "MemProp5x6-39",
+    "mem-prop-5x6--39": {
+      "id": "mem-prop-5x6--39",
       "wh": {
         "x": 5,
         "y": 6
@@ -1953,12 +2019,12 @@
         {
           "id": 66,
           "bounds": {
-            "x": 503,
-            "y": 6,
+            "x": 424,
+            "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1968,12 +2034,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-3a": {
-      "id": "MemProp5x6-3a",
+    "mem-prop-5x6--3a": {
+      "id": "mem-prop-5x6--3a",
       "wh": {
         "x": 5,
         "y": 6
@@ -1982,12 +2049,12 @@
         {
           "id": 67,
           "bounds": {
-            "x": 424,
+            "x": 419,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -1997,12 +2064,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-3b": {
-      "id": "MemProp5x6-3b",
+    "mem-prop-5x6--3b": {
+      "id": "mem-prop-5x6--3b",
       "wh": {
         "x": 5,
         "y": 6
@@ -2011,12 +2079,12 @@
         {
           "id": 68,
           "bounds": {
-            "x": 419,
+            "x": 414,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2026,12 +2094,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-3c": {
-      "id": "MemProp5x6-3c",
+    "mem-prop-5x6--3c": {
+      "id": "mem-prop-5x6--3c",
       "wh": {
         "x": 5,
         "y": 6
@@ -2040,12 +2109,12 @@
         {
           "id": 69,
           "bounds": {
-            "x": 414,
+            "x": 409,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2055,12 +2124,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-3d": {
-      "id": "MemProp5x6-3d",
+    "mem-prop-5x6--3d": {
+      "id": "mem-prop-5x6--3d",
       "wh": {
         "x": 5,
         "y": 6
@@ -2069,12 +2139,12 @@
         {
           "id": 70,
           "bounds": {
-            "x": 409,
+            "x": 404,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2084,12 +2154,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-3e": {
-      "id": "MemProp5x6-3e",
+    "mem-prop-5x6--3e": {
+      "id": "mem-prop-5x6--3e",
       "wh": {
         "x": 5,
         "y": 6
@@ -2098,12 +2169,12 @@
         {
           "id": 71,
           "bounds": {
-            "x": 404,
+            "x": 399,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2113,12 +2184,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-3f": {
-      "id": "MemProp5x6-3f",
+    "mem-prop-5x6--3f": {
+      "id": "mem-prop-5x6--3f",
       "wh": {
         "x": 5,
         "y": 6
@@ -2127,12 +2199,12 @@
         {
           "id": 72,
           "bounds": {
-            "x": 399,
+            "x": 394,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2142,12 +2214,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-40": {
-      "id": "MemProp5x6-40",
+    "mem-prop-5x6--40": {
+      "id": "mem-prop-5x6--40",
       "wh": {
         "x": 5,
         "y": 6
@@ -2156,12 +2229,12 @@
         {
           "id": 73,
           "bounds": {
-            "x": 394,
+            "x": 389,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2171,12 +2244,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-41": {
-      "id": "MemProp5x6-41",
+    "mem-prop-5x6--41": {
+      "id": "mem-prop-5x6--41",
       "wh": {
         "x": 5,
         "y": 6
@@ -2185,12 +2259,12 @@
         {
           "id": 74,
           "bounds": {
-            "x": 389,
+            "x": 384,
             "y": 12,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2200,12 +2274,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-42": {
-      "id": "MemProp5x6-42",
+    "mem-prop-5x6--42": {
+      "id": "mem-prop-5x6--42",
       "wh": {
         "x": 5,
         "y": 6
@@ -2214,12 +2289,12 @@
         {
           "id": 75,
           "bounds": {
-            "x": 384,
-            "y": 12,
+            "x": 379,
+            "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2229,12 +2304,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-43": {
-      "id": "MemProp5x6-43",
+    "mem-prop-5x6--43": {
+      "id": "mem-prop-5x6--43",
       "wh": {
         "x": 5,
         "y": 6
@@ -2243,12 +2319,12 @@
         {
           "id": 76,
           "bounds": {
-            "x": 379,
+            "x": 374,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2258,12 +2334,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-44": {
-      "id": "MemProp5x6-44",
+    "mem-prop-5x6--44": {
+      "id": "mem-prop-5x6--44",
       "wh": {
         "x": 5,
         "y": 6
@@ -2272,12 +2349,12 @@
         {
           "id": 77,
           "bounds": {
-            "x": 374,
-            "y": 8,
+            "x": 563,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2287,12 +2364,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-45": {
-      "id": "MemProp5x6-45",
+    "mem-prop-5x6--45": {
+      "id": "mem-prop-5x6--45",
       "wh": {
         "x": 5,
         "y": 6
@@ -2301,12 +2379,12 @@
         {
           "id": 78,
           "bounds": {
-            "x": 563,
-            "y": 6,
+            "x": 364,
+            "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2316,12 +2394,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-46": {
-      "id": "MemProp5x6-46",
+    "mem-prop-5x6--46": {
+      "id": "mem-prop-5x6--46",
       "wh": {
         "x": 5,
         "y": 6
@@ -2330,12 +2409,12 @@
         {
           "id": 79,
           "bounds": {
-            "x": 364,
+            "x": 359,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2345,12 +2424,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-47": {
-      "id": "MemProp5x6-47",
+    "mem-prop-5x6--47": {
+      "id": "mem-prop-5x6--47",
       "wh": {
         "x": 5,
         "y": 6
@@ -2359,12 +2439,12 @@
         {
           "id": 80,
           "bounds": {
-            "x": 359,
+            "x": 354,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2374,12 +2454,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-48": {
-      "id": "MemProp5x6-48",
+    "mem-prop-5x6--48": {
+      "id": "mem-prop-5x6--48",
       "wh": {
         "x": 5,
         "y": 6
@@ -2388,12 +2469,12 @@
         {
           "id": 81,
           "bounds": {
-            "x": 354,
+            "x": 349,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2403,12 +2484,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-49": {
-      "id": "MemProp5x6-49",
+    "mem-prop-5x6--49": {
+      "id": "mem-prop-5x6--49",
       "wh": {
         "x": 5,
         "y": 6
@@ -2417,12 +2499,12 @@
         {
           "id": 82,
           "bounds": {
-            "x": 349,
+            "x": 344,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2432,12 +2514,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-4a": {
-      "id": "MemProp5x6-4a",
+    "mem-prop-5x6--4a": {
+      "id": "mem-prop-5x6--4a",
       "wh": {
         "x": 5,
         "y": 6
@@ -2446,12 +2529,12 @@
         {
           "id": 83,
           "bounds": {
-            "x": 344,
+            "x": 339,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2461,12 +2544,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-4b": {
-      "id": "MemProp5x6-4b",
+    "mem-prop-5x6--4b": {
+      "id": "mem-prop-5x6--4b",
       "wh": {
         "x": 5,
         "y": 6
@@ -2475,12 +2559,12 @@
         {
           "id": 84,
           "bounds": {
-            "x": 339,
+            "x": 334,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2490,12 +2574,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-4c": {
-      "id": "MemProp5x6-4c",
+    "mem-prop-5x6--4c": {
+      "id": "mem-prop-5x6--4c",
       "wh": {
         "x": 5,
         "y": 6
@@ -2504,12 +2589,12 @@
         {
           "id": 85,
           "bounds": {
-            "x": 334,
+            "x": 329,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2519,12 +2604,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-4d": {
-      "id": "MemProp5x6-4d",
+    "mem-prop-5x6--4d": {
+      "id": "mem-prop-5x6--4d",
       "wh": {
         "x": 5,
         "y": 6
@@ -2533,12 +2619,12 @@
         {
           "id": 86,
           "bounds": {
-            "x": 329,
+            "x": 324,
             "y": 8,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2548,12 +2634,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-4e": {
-      "id": "MemProp5x6-4e",
+    "mem-prop-5x6--4e": {
+      "id": "mem-prop-5x6--4e",
       "wh": {
         "x": 5,
         "y": 6
@@ -2562,12 +2649,12 @@
         {
           "id": 87,
           "bounds": {
-            "x": 324,
-            "y": 8,
+            "x": 578,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2577,12 +2664,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-4f": {
-      "id": "MemProp5x6-4f",
+    "mem-prop-5x6--4f": {
+      "id": "mem-prop-5x6--4f",
       "wh": {
         "x": 5,
         "y": 6
@@ -2591,12 +2679,12 @@
         {
           "id": 88,
           "bounds": {
-            "x": 578,
+            "x": 573,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2606,12 +2694,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-50": {
-      "id": "MemProp5x6-50",
+    "mem-prop-5x6--50": {
+      "id": "mem-prop-5x6--50",
       "wh": {
         "x": 5,
         "y": 6
@@ -2620,12 +2709,12 @@
         {
           "id": 89,
           "bounds": {
-            "x": 573,
+            "x": 568,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2635,12 +2724,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-51": {
-      "id": "MemProp5x6-51",
+    "mem-prop-5x6--51": {
+      "id": "mem-prop-5x6--51",
       "wh": {
         "x": 5,
         "y": 6
@@ -2649,12 +2739,11 @@
         {
           "id": 90,
           "bounds": {
-            "x": 568,
-            "y": 6,
+            "x": 508,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2664,12 +2753,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-52": {
-      "id": "MemProp5x6-52",
+    "mem-prop-5x6--52": {
+      "id": "mem-prop-5x6--52",
       "wh": {
         "x": 5,
         "y": 6
@@ -2678,11 +2768,11 @@
         {
           "id": 91,
           "bounds": {
-            "x": 508,
+            "x": 393,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2692,12 +2782,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-53": {
-      "id": "MemProp5x6-53",
+    "mem-prop-5x6--53": {
+      "id": "mem-prop-5x6--53",
       "wh": {
         "x": 5,
         "y": 6
@@ -2706,11 +2797,11 @@
         {
           "id": 92,
           "bounds": {
-            "x": 393,
+            "x": 503,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2720,12 +2811,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-54": {
-      "id": "MemProp5x6-54",
+    "mem-prop-5x6--54": {
+      "id": "mem-prop-5x6--54",
       "wh": {
         "x": 5,
         "y": 6
@@ -2734,11 +2826,11 @@
         {
           "id": 93,
           "bounds": {
-            "x": 503,
+            "x": 498,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2748,12 +2840,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-55": {
-      "id": "MemProp5x6-55",
+    "mem-prop-5x6--55": {
+      "id": "mem-prop-5x6--55",
       "wh": {
         "x": 5,
         "y": 6
@@ -2762,11 +2855,11 @@
         {
           "id": 94,
           "bounds": {
-            "x": 498,
+            "x": 493,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2776,12 +2869,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-56": {
-      "id": "MemProp5x6-56",
+    "mem-prop-5x6--56": {
+      "id": "mem-prop-5x6--56",
       "wh": {
         "x": 5,
         "y": 6
@@ -2790,11 +2884,11 @@
         {
           "id": 95,
           "bounds": {
-            "x": 493,
+            "x": 488,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2804,12 +2898,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-57": {
-      "id": "MemProp5x6-57",
+    "mem-prop-5x6--57": {
+      "id": "mem-prop-5x6--57",
       "wh": {
         "x": 5,
         "y": 6
@@ -2818,11 +2913,11 @@
         {
           "id": 96,
           "bounds": {
-            "x": 488,
+            "x": 483,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2832,12 +2927,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-58": {
-      "id": "MemProp5x6-58",
+    "mem-prop-5x6--58": {
+      "id": "mem-prop-5x6--58",
       "wh": {
         "x": 5,
         "y": 6
@@ -2846,11 +2942,11 @@
         {
           "id": 97,
           "bounds": {
-            "x": 483,
+            "x": 478,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2860,12 +2956,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-59": {
-      "id": "MemProp5x6-59",
+    "mem-prop-5x6--59": {
+      "id": "mem-prop-5x6--59",
       "wh": {
         "x": 5,
         "y": 6
@@ -2874,11 +2971,11 @@
         {
           "id": 98,
           "bounds": {
-            "x": 478,
+            "x": 473,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2888,12 +2985,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-5a": {
-      "id": "MemProp5x6-5a",
+    "mem-prop-5x6--5a": {
+      "id": "mem-prop-5x6--5a",
       "wh": {
         "x": 5,
         "y": 6
@@ -2902,11 +3000,11 @@
         {
           "id": 99,
           "bounds": {
-            "x": 473,
+            "x": 468,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2916,12 +3014,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-5b": {
-      "id": "MemProp5x6-5b",
+    "mem-prop-5x6--5b": {
+      "id": "mem-prop-5x6--5b",
       "wh": {
         "x": 5,
         "y": 6
@@ -2930,11 +3029,11 @@
         {
           "id": 100,
           "bounds": {
-            "x": 468,
+            "x": 463,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2944,12 +3043,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-5c": {
-      "id": "MemProp5x6-5c",
+    "mem-prop-5x6--5c": {
+      "id": "mem-prop-5x6--5c",
       "wh": {
         "x": 5,
         "y": 6
@@ -2958,11 +3058,11 @@
         {
           "id": 101,
           "bounds": {
-            "x": 463,
+            "x": 458,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -2972,12 +3072,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-5d": {
-      "id": "MemProp5x6-5d",
+    "mem-prop-5x6--5d": {
+      "id": "mem-prop-5x6--5d",
       "wh": {
         "x": 5,
         "y": 6
@@ -2986,11 +3087,11 @@
         {
           "id": 102,
           "bounds": {
-            "x": 458,
+            "x": 453,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3000,12 +3101,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-5e": {
-      "id": "MemProp5x6-5e",
+    "mem-prop-5x6--5e": {
+      "id": "mem-prop-5x6--5e",
       "wh": {
         "x": 5,
         "y": 6
@@ -3014,11 +3116,11 @@
         {
           "id": 103,
           "bounds": {
-            "x": 453,
+            "x": 448,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3028,12 +3130,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-5f": {
-      "id": "MemProp5x6-5f",
+    "mem-prop-5x6--5f": {
+      "id": "mem-prop-5x6--5f",
       "wh": {
         "x": 5,
         "y": 6
@@ -3042,11 +3145,11 @@
         {
           "id": 104,
           "bounds": {
-            "x": 448,
+            "x": 443,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3056,12 +3159,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-60": {
-      "id": "MemProp5x6-60",
+    "mem-prop-5x6--60": {
+      "id": "mem-prop-5x6--60",
       "wh": {
         "x": 5,
         "y": 6
@@ -3070,11 +3174,11 @@
         {
           "id": 105,
           "bounds": {
-            "x": 443,
+            "x": 438,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3084,12 +3188,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-61": {
-      "id": "MemProp5x6-61",
+    "mem-prop-5x6--61": {
+      "id": "mem-prop-5x6--61",
       "wh": {
         "x": 5,
         "y": 6
@@ -3098,11 +3203,11 @@
         {
           "id": 106,
           "bounds": {
-            "x": 438,
+            "x": 433,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3112,12 +3217,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-62": {
-      "id": "MemProp5x6-62",
+    "mem-prop-5x6--62": {
+      "id": "mem-prop-5x6--62",
       "wh": {
         "x": 5,
         "y": 6
@@ -3126,11 +3232,11 @@
         {
           "id": 107,
           "bounds": {
-            "x": 433,
+            "x": 428,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3140,12 +3246,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-63": {
-      "id": "MemProp5x6-63",
+    "mem-prop-5x6--63": {
+      "id": "mem-prop-5x6--63",
       "wh": {
         "x": 5,
         "y": 6
@@ -3154,11 +3261,11 @@
         {
           "id": 108,
           "bounds": {
-            "x": 428,
+            "x": 423,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3168,12 +3275,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-64": {
-      "id": "MemProp5x6-64",
+    "mem-prop-5x6--64": {
+      "id": "mem-prop-5x6--64",
       "wh": {
         "x": 5,
         "y": 6
@@ -3182,11 +3290,11 @@
         {
           "id": 109,
           "bounds": {
-            "x": 423,
+            "x": 418,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3196,12 +3304,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-65": {
-      "id": "MemProp5x6-65",
+    "mem-prop-5x6--65": {
+      "id": "mem-prop-5x6--65",
       "wh": {
         "x": 5,
         "y": 6
@@ -3210,11 +3319,11 @@
         {
           "id": 110,
           "bounds": {
-            "x": 418,
+            "x": 413,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3224,12 +3333,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-66": {
-      "id": "MemProp5x6-66",
+    "mem-prop-5x6--66": {
+      "id": "mem-prop-5x6--66",
       "wh": {
         "x": 5,
         "y": 6
@@ -3238,11 +3348,11 @@
         {
           "id": 111,
           "bounds": {
-            "x": 413,
+            "x": 408,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3252,12 +3362,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-67": {
-      "id": "MemProp5x6-67",
+    "mem-prop-5x6--67": {
+      "id": "mem-prop-5x6--67",
       "wh": {
         "x": 5,
         "y": 6
@@ -3266,11 +3377,11 @@
         {
           "id": 112,
           "bounds": {
-            "x": 408,
+            "x": 403,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3280,12 +3391,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-68": {
-      "id": "MemProp5x6-68",
+    "mem-prop-5x6--68": {
+      "id": "mem-prop-5x6--68",
       "wh": {
         "x": 5,
         "y": 6
@@ -3294,11 +3406,11 @@
         {
           "id": 113,
           "bounds": {
-            "x": 403,
+            "x": 398,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3308,12 +3420,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-69": {
-      "id": "MemProp5x6-69",
+    "mem-prop-5x6--69": {
+      "id": "mem-prop-5x6--69",
       "wh": {
         "x": 5,
         "y": 6
@@ -3322,11 +3435,11 @@
         {
           "id": 114,
           "bounds": {
-            "x": 398,
+            "x": 388,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3336,12 +3449,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-6a": {
-      "id": "MemProp5x6-6a",
+    "mem-prop-5x6--6a": {
+      "id": "mem-prop-5x6--6a",
       "wh": {
         "x": 5,
         "y": 6
@@ -3350,11 +3464,11 @@
         {
           "id": 115,
           "bounds": {
-            "x": 388,
+            "x": 573,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3364,12 +3478,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-6b": {
-      "id": "MemProp5x6-6b",
+    "mem-prop-5x6--6b": {
+      "id": "mem-prop-5x6--6b",
       "wh": {
         "x": 5,
         "y": 6
@@ -3378,11 +3493,12 @@
         {
           "id": 116,
           "bounds": {
-            "x": 573,
+            "x": 433,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3392,12 +3508,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-6c": {
-      "id": "MemProp5x6-6c",
+    "mem-prop-5x6--6c": {
+      "id": "mem-prop-5x6--6c",
       "wh": {
         "x": 5,
         "y": 6
@@ -3406,12 +3523,12 @@
         {
           "id": 117,
           "bounds": {
-            "x": 433,
+            "x": 428,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3421,12 +3538,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-6d": {
-      "id": "MemProp5x6-6d",
+    "mem-prop-5x6--6d": {
+      "id": "mem-prop-5x6--6d",
       "wh": {
         "x": 5,
         "y": 6
@@ -3435,12 +3553,12 @@
         {
           "id": 118,
           "bounds": {
-            "x": 428,
+            "x": 423,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3450,12 +3568,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-6e": {
-      "id": "MemProp5x6-6e",
+    "mem-prop-5x6--6e": {
+      "id": "mem-prop-5x6--6e",
       "wh": {
         "x": 5,
         "y": 6
@@ -3464,12 +3583,12 @@
         {
           "id": 119,
           "bounds": {
-            "x": 423,
+            "x": 418,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3479,12 +3598,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-6f": {
-      "id": "MemProp5x6-6f",
+    "mem-prop-5x6--6f": {
+      "id": "mem-prop-5x6--6f",
       "wh": {
         "x": 5,
         "y": 6
@@ -3493,12 +3613,12 @@
         {
           "id": 120,
           "bounds": {
-            "x": 418,
+            "x": 413,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3508,12 +3628,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-70": {
-      "id": "MemProp5x6-70",
+    "mem-prop-5x6--70": {
+      "id": "mem-prop-5x6--70",
       "wh": {
         "x": 5,
         "y": 6
@@ -3522,12 +3643,12 @@
         {
           "id": 121,
           "bounds": {
-            "x": 413,
+            "x": 408,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3537,12 +3658,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-71": {
-      "id": "MemProp5x6-71",
+    "mem-prop-5x6--71": {
+      "id": "mem-prop-5x6--71",
       "wh": {
         "x": 5,
         "y": 6
@@ -3551,12 +3673,12 @@
         {
           "id": 122,
           "bounds": {
-            "x": 408,
+            "x": 403,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3566,12 +3688,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-72": {
-      "id": "MemProp5x6-72",
+    "mem-prop-5x6--72": {
+      "id": "mem-prop-5x6--72",
       "wh": {
         "x": 5,
         "y": 6
@@ -3580,12 +3703,12 @@
         {
           "id": 123,
           "bounds": {
-            "x": 403,
+            "x": 398,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3595,12 +3718,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-73": {
-      "id": "MemProp5x6-73",
+    "mem-prop-5x6--73": {
+      "id": "mem-prop-5x6--73",
       "wh": {
         "x": 5,
         "y": 6
@@ -3609,12 +3733,12 @@
         {
           "id": 124,
           "bounds": {
-            "x": 398,
+            "x": 393,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3624,12 +3748,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-74": {
-      "id": "MemProp5x6-74",
+    "mem-prop-5x6--74": {
+      "id": "mem-prop-5x6--74",
       "wh": {
         "x": 5,
         "y": 6
@@ -3638,12 +3763,12 @@
         {
           "id": 125,
           "bounds": {
-            "x": 393,
+            "x": 388,
             "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3653,12 +3778,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-75": {
-      "id": "MemProp5x6-75",
+    "mem-prop-5x6--75": {
+      "id": "mem-prop-5x6--75",
       "wh": {
         "x": 5,
         "y": 6
@@ -3667,12 +3793,11 @@
         {
           "id": 126,
           "bounds": {
-            "x": 388,
-            "y": 6,
+            "x": 578,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3682,12 +3807,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-76": {
-      "id": "MemProp5x6-76",
+    "mem-prop-5x6--76": {
+      "id": "mem-prop-5x6--76",
       "wh": {
         "x": 5,
         "y": 6
@@ -3696,11 +3822,11 @@
         {
           "id": 127,
           "bounds": {
-            "x": 578,
+            "x": 513,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3710,12 +3836,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-77": {
-      "id": "MemProp5x6-77",
+    "mem-prop-5x6--77": {
+      "id": "mem-prop-5x6--77",
       "wh": {
         "x": 5,
         "y": 6
@@ -3724,11 +3851,11 @@
         {
           "id": 128,
           "bounds": {
-            "x": 513,
+            "x": 568,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3738,12 +3865,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-78": {
-      "id": "MemProp5x6-78",
+    "mem-prop-5x6--78": {
+      "id": "mem-prop-5x6--78",
       "wh": {
         "x": 5,
         "y": 6
@@ -3752,11 +3880,11 @@
         {
           "id": 129,
           "bounds": {
-            "x": 568,
+            "x": 563,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3766,12 +3894,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-79": {
-      "id": "MemProp5x6-79",
+    "mem-prop-5x6--79": {
+      "id": "mem-prop-5x6--79",
       "wh": {
         "x": 5,
         "y": 6
@@ -3780,11 +3909,11 @@
         {
           "id": 130,
           "bounds": {
-            "x": 563,
+            "x": 558,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3794,12 +3923,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-7a": {
-      "id": "MemProp5x6-7a",
+    "mem-prop-5x6--7a": {
+      "id": "mem-prop-5x6--7a",
       "wh": {
         "x": 5,
         "y": 6
@@ -3808,11 +3938,11 @@
         {
           "id": 131,
           "bounds": {
-            "x": 558,
+            "x": 553,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3822,12 +3952,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-7b": {
-      "id": "MemProp5x6-7b",
+    "mem-prop-5x6--7b": {
+      "id": "mem-prop-5x6--7b",
       "wh": {
         "x": 5,
         "y": 6
@@ -3836,11 +3967,11 @@
         {
           "id": 132,
           "bounds": {
-            "x": 553,
+            "x": 548,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3850,12 +3981,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-7c": {
-      "id": "MemProp5x6-7c",
+    "mem-prop-5x6--7c": {
+      "id": "mem-prop-5x6--7c",
       "wh": {
         "x": 5,
         "y": 6
@@ -3864,11 +3996,11 @@
         {
           "id": 133,
           "bounds": {
-            "x": 548,
+            "x": 543,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3878,12 +4010,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-7d": {
-      "id": "MemProp5x6-7d",
+    "mem-prop-5x6--7d": {
+      "id": "mem-prop-5x6--7d",
       "wh": {
         "x": 5,
         "y": 6
@@ -3892,11 +4025,11 @@
         {
           "id": 134,
           "bounds": {
-            "x": 543,
+            "x": 538,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3906,12 +4039,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-7e": {
-      "id": "MemProp5x6-7e",
+    "mem-prop-5x6--7e": {
+      "id": "mem-prop-5x6--7e",
       "wh": {
         "x": 5,
         "y": 6
@@ -3920,11 +4054,11 @@
         {
           "id": 135,
           "bounds": {
-            "x": 538,
+            "x": 533,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3934,12 +4068,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "MemProp5x6-7f": {
-      "id": "MemProp5x6-7f",
+    "mem-prop-5x6--7f": {
+      "id": "mem-prop-5x6--7f",
       "wh": {
         "x": 5,
         "y": 6
@@ -3948,12 +4083,12 @@
         {
           "id": 136,
           "bounds": {
-            "x": 369,
-            "y": 8,
+            "x": 558,
+            "y": 6,
             "w": 5,
             "h": 6
           },
-          "duration": 4294967295,
+          "duration": 65535,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3963,12 +4098,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 65535,
+      "duration": 65535,
+      "direction": "Forward",
+      "loops": null
     },
-    "PaletteAlpha": {
-      "id": "PaletteAlpha",
+    "palette--Alpha": {
+      "id": "palette--Alpha",
       "wh": {
         "x": 8,
         "y": 8
@@ -3981,7 +4117,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -3991,12 +4127,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "PaletteDark": {
-      "id": "PaletteDark",
+    "palette--Dark": {
+      "id": "palette--Dark",
       "wh": {
         "x": 8,
         "y": 8
@@ -4009,7 +4146,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -4019,12 +4156,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "PaletteMid": {
-      "id": "PaletteMid",
+    "palette--Mid": {
+      "id": "palette--Mid",
       "wh": {
         "x": 8,
         "y": 8
@@ -4037,7 +4175,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -4047,12 +4185,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "PaletteLight": {
-      "id": "PaletteLight",
+    "palette--Light": {
+      "id": "palette--Light",
       "wh": {
         "x": 8,
         "y": 8
@@ -4065,7 +4204,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -4075,12 +4214,13 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     },
-    "PaletteYellow": {
-      "id": "PaletteYellow",
+    "palette--Yellow": {
+      "id": "palette--Yellow",
       "wh": {
         "x": 8,
         "y": 8
@@ -4093,7 +4233,7 @@
             "w": 8,
             "h": 8
           },
-          "duration": 4294967295,
+          "duration": 1,
           "sliceBounds": {
             "x": 1,
             "y": 1,
@@ -4103,9 +4243,10 @@
           "slices": []
         }
       ],
-      "period": 4294967295,
-      "duration": 4294967295,
-      "direction": "Forward"
+      "period": 1,
+      "duration": 1,
+      "direction": "Forward",
+      "loops": null
     }
   },
   "celBoundsByID": [
@@ -4150,205 +4291,200 @@
       "h": 16
     },
     {
-      "x": 533,
-      "w": 5,
-      "h": 6
-    },
-    {
       "x": 369,
       "y": 8,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },
@@ -4882,8 +5018,13 @@
       "h": 6
     },
     {
-      "x": 369,
-      "y": 8,
+      "x": 533,
+      "w": 5,
+      "h": 6
+    },
+    {
+      "x": 558,
+      "y": 6,
       "w": 5,
       "h": 6
     },

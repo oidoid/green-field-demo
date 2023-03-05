@@ -40,7 +40,7 @@ function parseComponentSet(
         set.pickHealthAdder = { delta: I16(val.delta) }
         break
       case 'spawner':
-        set.spawner = {}
+        set.spawner = []
         break
       default:
         throw Error(`Unsupported level config type "${key}".`)

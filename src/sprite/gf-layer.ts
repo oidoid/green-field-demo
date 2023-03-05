@@ -1,4 +1,4 @@
-import { Immutable, Inverse, U8 } from '@/ooz'
+import { Immutable, U8 } from '@/ooz'
 import { Layer } from '@/void'
 
 export const GFLayer = Immutable({
@@ -7,5 +7,3 @@ export const GFLayer = Immutable({
 }) satisfies { [name: string]: U8 }
 
 export type GFLayer = keyof typeof GFLayer
-
-export const SPLayerInverse = Immutable(Inverse(GFLayer))

@@ -6,20 +6,19 @@
 
   {
     "name": "cursor",
-    "cursor": { "pick": "CursorPick", "point": "CursorPoint" },
+    "cursor": { "pick": "cursor--Pick", "point": "cursor--Point" },
     "followPoint": {},
-    "sprite": { "id": "CursorPoint", "layer": "Bottom" }
+    "sprite": { "id": "cursor--Point", "layer": "Bottom" }
   },
 
   {
     "name": "flower",
-    "sprite": { "id": "Flower", "layer": "Top", "x": 60, "y": 50 }
+    "sprite": { "id": "flower--Flower", "layer": "Top", "x": 60, "y": 50 }
   },
 
   {
     "name": "beehive",
-    "sprite": { "id": "Flower", "layer": "Top", "x": 10, "y": 50 },
-    "sprites": [],
+    "sprite": { "id": "flower--Flower", "layer": "Top", "x": 10, "y": 50 },
     "spawner": {}
   },
   {
@@ -30,7 +29,7 @@
       "pad": { "x": 1, "y": 1 }
     },
     "sprite": {
-      "id": "PaletteYellow",
+      "id": "palette--Yellow",
       "layer": "Background",
       "layerByHeight": true,
       "wrap": { "x": -1, "y": -1 }
@@ -39,7 +38,7 @@
 
   {
     "sprite": {
-      "id": "PaletteLight",
+      "id": "palette--Light",
       "layer": "Top",
       "layerByHeight": true,
       "x": 1,

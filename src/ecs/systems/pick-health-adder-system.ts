@@ -31,7 +31,7 @@ export class PickHealthAdderSystem
       // to-do: health system
       // to-do: ability to delete component here
       // if (set.health == 0)
-      ent.sprite.animate(state.time, state.filmByID.BeeDead)
+      ent.sprite.animate(state.time, state.filmByID['bee--Dead'])
 
       state.pickHandled = true
     }

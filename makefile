@@ -5,10 +5,10 @@ assets_dir := assets
 atlas_assets_dir := $(assets_dir)/atlas
 src_dir := src
 
-# Sort to strip out font.aseprite duplicate when it already exists.
+# Sort to strip out mem-prop-5x6.aseprite duplicate when it already exists.
 atlas_in_files := $(sort \
   $(wildcard $(atlas_assets_dir)/*.aseprite) \
-  $(atlas_assets_dir)/font.aseprite \
+  $(atlas_assets_dir)/mem-prop-5x6.aseprite \
 )
 asset_files := \
   $(assets_dir)/atlas.json \
@@ -80,7 +80,7 @@ $(assets_dir)/atlas.json $(assets_dir)/atlas.png&: $(atlas_in_files)
     --color-mode=indexed|
   ../../atlas-pack/bin/atlas-pack > '$(assets_dir)/atlas.json'
 
-$(atlas_assets_dir)/font.aseprite: \
+$(atlas_assets_dir)/mem-prop-5x6.aseprite: \
   ../../mem/src/mem-prop-5x6.aseprite \
   $(atlas_assets_dir)/palette.aseprite
   $(aseprite) \
@@ -109,7 +109,7 @@ clean:
     '$(dist_dir)/' \
     '$(assets_dir)/atlas.json' \
     '$(assets_dir)/atlas.png' \
-    '$(atlas_assets_dir)/font.aseprite'
+    '$(atlas_assets_dir)/mem-prop-5x6.aseprite'
 
 .PHONY: rebuild
 rebuild:
