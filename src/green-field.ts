@@ -7,7 +7,7 @@ import {
   SpawnerSystem,
   SpriteFactory,
 } from '@/green-field'
-import { assertNonNull, NonNull } from '@/ooz'
+import { assertNonNull } from '@/ooz'
 import {
   CamSystem,
   CursorSystem,
@@ -60,11 +60,11 @@ export function GreenField(
     ...newLevelComponents(
       new SpriteFactory(assets.atlasMeta.filmByID),
       assets.font,
-    ) as GFEnt[], // to-do: fix types
+    ),
   )
   ecs.patch()
 
-  const cam = NonNull(ecs.query('cam')[0], 'Missing cam entity.').cam
+  const cam = ecs.queryOne('cam').cam
   const self: GreenField = {
     assets,
     cam,
