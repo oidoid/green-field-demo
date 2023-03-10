@@ -54,7 +54,7 @@ export function GreenField(
     new FPSSystem(),
     new PickHealthAdderSystem(),
     new SpawnerSystem(),
-    new RenderSystem(),
+    new RenderSystem<GFEnt>(),
   )
   ecs.addEnt(
     ...newLevelComponents(

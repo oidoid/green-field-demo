@@ -1,13 +1,9 @@
 import { GFEnt, GFRunState, PickHealthAdder } from '@/green-field'
 import { U16 } from '@/ooz'
-import { QueryToEnt, Sprite, System } from '@/void'
+import { QueryEnt, Sprite, System } from '@/void'
 
-export type PickHealthAdderEnt = QueryToEnt<
-  {
-    health: { health: U16 }
-    pickHealthAdder: PickHealthAdder
-    sprite: Sprite
-  },
+export type PickHealthAdderEnt = QueryEnt<
+  { health: { health: U16 }; pickHealthAdder: PickHealthAdder; sprite: Sprite },
   typeof query
 >
 
