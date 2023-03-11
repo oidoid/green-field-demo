@@ -1,8 +1,8 @@
 import { GreenField } from '@/green-field'
-import pkg from '../package.json' assert { type: 'json' }
+import config from '../deno.json' assert { type: 'json' }
 
 // [strings][version]
-console.log(`Green Field v${pkg.version}
+console.log(`Green Field v${config.version}
    ┌>°┐
 by │  │idoid
    └──┘`)
