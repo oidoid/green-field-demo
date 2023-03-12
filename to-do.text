@@ -1,11 +1,12 @@
-strip everything away and make it really nice. should be as empty as practical for this demo.
-num, XY
-copy over most promising green field sprites
-copy over bunny sprites
-populate game with many bunnies
-copy over NE cursor
-squish bunny on cursor input
-add font
-increment score when squish bunny
-death when they get all carrots offscreen
-gradually increase number of bunnies
+Get first maze implementation up. Just keep tileset static for background. Keep the drawings simple.
+   ______________
+  |      _       |
+  |     |_|      |
+  |   x          |
+  |_   _         |
+    |_| |________|
+Explore waving grass
+The lighting in fester's is top-notch. try to focus on this.
+How will collisioning work against walls?
+
+tmnt dungeon crawler: I think move forward with small blue man and start on maze-scenery to see how it fits + pixel clouds. Try to get a walking man. Tiles are 16px^2 top-down. Make plateau 9png / autotile thing for maze.
