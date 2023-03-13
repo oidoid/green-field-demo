@@ -1,10 +1,5 @@
 [
   {
-    "name": "cam",
-    "cam": { "minViewport": { "x": 160, "y": 140 } }
-  },
-
-  {
     "name": "cursor",
     "cursor": { "pick": "cursor--Pick", "point": "cursor--Point" },
     "followPoint": {},

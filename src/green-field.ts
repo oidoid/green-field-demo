@@ -7,15 +7,12 @@ import {
   SpawnerSystem,
   SpriteFactory,
 } from '@/green-field'
-import { assertNonNull, Immutable } from '@/ooz'
+import { assertNonNull, Immutable, U16XY } from '@/ooz'
 import {
-  Cam,
-  CamSystem,
   CursorSystem,
   FollowCamSystem,
   FollowPointSystem,
   FPSSystem,
-  Input,
   RenderSystem,
   Sprite,
   Synth,
@@ -42,11 +39,8 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
   static async new(window: Window): Promise<GreenField> {
     const canvas = window.document.getElementsByTagName('canvas').item(0)
     assertNonNull(canvas, 'Canvas missing.')
-    return new GreenField(await GFAssets.load(), canvas, Math.random)
+    return new GreenField(await GFAssets.load(), canvas, Math.random, window)
   }
-
-  override readonly cam: Readonly<Cam>
-  override readonly input: Input
 
   readonly #cursor: Sprite
 
@@ -54,11 +48,11 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     assets: GFAssets,
     canvas: HTMLCanvasElement,
     random: () => number,
+    window: Window,
   ) {
-    super(assets, canvas, random)
+    super(assets, canvas, new U16XY(160, 140), random, window)
 
     this.ecs.addSystem(
-      new CamSystem(),
       new FollowCamSystem(),
       new CursorSystem(),
       new FollowPointSystem(),
@@ -76,8 +70,6 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     )
     this.ecs.patch()
 
-    this.cam = this.ecs.queryOne('cam').cam
-    this.input = new Input(this.cam)
     this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
   }
 
