@@ -2,7 +2,7 @@ import { FilmByID } from '@/atlas-pack'
 import { Cam, ECS, Game, Input, Renderer, RendererStateMachine } from '@/void'
 
 import {
-  Assets,
+  GFAssets,
   GFEnt,
   GFFilmID,
   newLevelComponents,
@@ -42,7 +42,7 @@ export class GreenField implements Game<GFEnt, GFFilmID> {
   static async new(window: Window): Promise<GreenField> {
     const canvas = window.document.getElementsByTagName('canvas').item(0)
     assertNonNull(canvas, 'Canvas missing.')
-    return new GreenField(await Assets.load(), canvas, Math.random)
+    return new GreenField(await GFAssets.load(), canvas, Math.random)
   }
 
   readonly cam: Readonly<Cam>
@@ -59,7 +59,11 @@ export class GreenField implements Game<GFEnt, GFFilmID> {
   /** The exact duration in milliseconds to apply on a given update step. */
   #tick: number = 1
 
-  constructor(assets: Assets, canvas: HTMLCanvasElement, random: () => number) {
+  constructor(
+    assets: GFAssets,
+    canvas: HTMLCanvasElement,
+    random: () => number,
+  ) {
     this.ecs = new ECS<GFEnt>()
     this.ecs.addSystem(
       new CamSystem(),

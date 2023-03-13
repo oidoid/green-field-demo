@@ -3,23 +3,20 @@ import { atlasJSON, GFFilmID } from '@/green-field'
 import { memProp5x6 } from '@/mem'
 import { I16 } from '@/ooz'
 import {
+  Assets,
   Font,
   FontParser,
   ImageLoader,
-  ShaderLayout,
   shaderLayoutConfig,
   ShaderLayoutParser,
 } from '@/void'
 
-export interface Assets {
-  readonly atlas: Readonly<HTMLImageElement>
-  readonly atlasMeta: Readonly<AtlasMeta<GFFilmID>>
+export interface GFAssets extends Assets<GFFilmID> {
   readonly font: Font
-  readonly shaderLayout: ShaderLayout
 }
 
-export namespace Assets {
-  export async function load(): Promise<Assets> {
+export namespace GFAssets {
+  export async function load(): Promise<GFAssets> {
     const atlas = await ImageLoader.load('atlas.png')
     const atlasMeta = AtlasMeta.fromJSON<GFFilmID>(atlasJSON)
     const shaderLayout = ShaderLayoutParser.parse(shaderLayoutConfig)

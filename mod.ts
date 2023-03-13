@@ -1,4 +1,4 @@
-export * from './src/assets/assets.ts'
+export * from './src/assets/gf-assets.ts'
 export * from './src/assets/gf-film-id.ts'
 export * from './src/ecs/components/pick-health-adder.ts'
 export * from './src/ecs/gf-ent.ts'
