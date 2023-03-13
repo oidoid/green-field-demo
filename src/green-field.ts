@@ -1,5 +1,5 @@
 import { FilmByID } from '@/atlas-pack'
-import { Cam, ECS, Game, Input, Renderer, RendererStateMachine } from '@/void'
+import { Cam, ECS, Game, Input, RendererStateMachine } from '@/void'
 
 import {
   GFAssets,
@@ -89,17 +89,11 @@ export class GreenField implements Game<GFEnt, GFFilmID> {
     this.filmByID = assets.atlasMeta.filmByID
     this.input = new Input(this.cam)
     this.renderer = new RendererStateMachine({
+      assets,
       window,
       canvas,
       onFrame: (delta) => this.#onFrame(delta),
       onPause: () => this.onPause(),
-      newRenderer: () =>
-        Renderer.new(
-          canvas,
-          assets.atlas,
-          assets.shaderLayout,
-          assets.atlasMeta,
-        ),
     })
     this.#random = random
     this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
