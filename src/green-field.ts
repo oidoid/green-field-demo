@@ -1,6 +1,3 @@
-import { FilmByID } from '@/atlas-pack'
-import { Cam, ECS, Game, Input, RendererStateMachine } from '@/void'
-
 import {
   GFAssets,
   GFEnt,
@@ -12,15 +9,18 @@ import {
 } from '@/green-field'
 import { assertNonNull, Immutable } from '@/ooz'
 import {
+  Cam,
   CamSystem,
   CursorSystem,
   FollowCamSystem,
   FollowPointSystem,
   FPSSystem,
+  Input,
   RenderSystem,
   Sprite,
   Synth,
   TextSystem,
+  VoidGame,
 } from '@/void'
 
 const combo = Immutable(
@@ -38,33 +38,25 @@ const combo = Immutable(
   ] as const,
 )
 
-export class GreenField implements Game<GFEnt, GFFilmID> {
+export class GreenField extends VoidGame<GFEnt, GFFilmID> {
   static async new(window: Window): Promise<GreenField> {
     const canvas = window.document.getElementsByTagName('canvas').item(0)
     assertNonNull(canvas, 'Canvas missing.')
     return new GreenField(await GFAssets.load(), canvas, Math.random)
   }
 
-  readonly cam: Readonly<Cam>
-  readonly filmByID: FilmByID<GFFilmID>
-  readonly ecs: ECS<GFEnt>
-  readonly input: Readonly<Input>
-  pickHandled: boolean = false
-  readonly renderer: RendererStateMachine
+  override readonly cam: Readonly<Cam>
+  override readonly input: Input
 
   readonly #cursor: Sprite
-  readonly #random: () => number
-  /** The running age in milliseconds. */
-  #time: number = 0
-  /** The exact duration in milliseconds to apply on a given update step. */
-  #tick: number = 1
 
   constructor(
     assets: GFAssets,
     canvas: HTMLCanvasElement,
     random: () => number,
   ) {
-    this.ecs = new ECS<GFEnt>()
+    super(assets, canvas, random)
+
     this.ecs.addSystem(
       new CamSystem(),
       new FollowCamSystem(),
@@ -82,20 +74,10 @@ export class GreenField implements Game<GFEnt, GFFilmID> {
         assets.font,
       ),
     )
-
     this.ecs.patch()
-    this.cam = this.ecs.queryOne('cam').cam
 
-    this.filmByID = assets.atlasMeta.filmByID
+    this.cam = this.ecs.queryOne('cam').cam
     this.input = new Input(this.cam)
-    this.renderer = new RendererStateMachine({
-      assets,
-      window,
-      canvas,
-      onFrame: (delta) => this.#onFrame(delta),
-      onPause: () => this.onPause(),
-    })
-    this.#random = random
     this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
   }
 
@@ -103,7 +85,7 @@ export class GreenField implements Game<GFEnt, GFFilmID> {
     return this.#cursor
   }
 
-  onFrame(): void {
+  override onFrame(): void {
     if (this.pickHandled) return
     if (this.input.isComboStart(...combo)) {
       Synth.play(Synth(), 'sawtooth', 200, 500, 0.15)
@@ -116,52 +98,7 @@ export class GreenField implements Game<GFEnt, GFFilmID> {
     ) {
       this.pickHandled = true
       this.renderer.loseContext()
-      setTimeout(
-        () => this.renderer.restoreContext(),
-        3000,
-      )
+      setTimeout(() => this.renderer.restoreContext(), 3000)
     }
-  }
-
-  #onFrame(delta: number): void {
-    this.#tick = delta
-    this.#time += delta
-    this.pickHandled = false
-
-    this.input.preupdate()
-
-    this.onFrame()
-
-    this.ecs.run(this)
-
-    // should actual render be here and not in the ecs?
-    this.input.postupdate(this.tick)
-  }
-
-  onPause(): void {
-    this.input.reset()
-  }
-
-  random(): number {
-    return this.#random()
-  }
-
-  start(): void {
-    this.input.register('add')
-    this.renderer.start()
-  }
-
-  stop(): void {
-    this.input.register('remove')
-    this.renderer.stop()
-    // win.close()
-  }
-
-  get tick(): number {
-    return this.#tick
-  }
-
-  get time(): number {
-    return this.#time
   }
 }
