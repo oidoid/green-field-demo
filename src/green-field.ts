@@ -1,150 +1,169 @@
+import { FilmByID } from '@/atlas-pack'
+import { Cam, ECS, Game, Input, Renderer, RendererStateMachine } from '@/void'
+
 import {
   Assets,
   GFEnt,
-  GFRunState,
+  GFFilmID,
   newLevelComponents,
   PickHealthAdderSystem,
   SpawnerSystem,
   SpriteFactory,
 } from '@/green-field'
-import { assertNonNull } from '@/ooz'
+import { assertNonNull, Immutable } from '@/ooz'
 import {
   CamSystem,
   CursorSystem,
-  ECS,
   FollowCamSystem,
   FollowPointSystem,
   FPSSystem,
-  Input,
-  Renderer,
-  RendererStateMachine,
   RenderSystem,
+  Sprite,
   Synth,
   TextSystem,
 } from '@/void'
 
-export interface GreenField extends GFRunState { // class pls
-  readonly assets: Assets
-  readonly canvas: HTMLCanvasElement
+const combo = Immutable(
+  [
+    ['Up'],
+    ['Up'],
+    ['Down'],
+    ['Down'],
+    ['Left'],
+    ['Right'],
+    ['Left'],
+    ['Right'],
+    ['Menu'],
+    ['Action'],
+  ] as const,
+)
+
+export class GreenField implements Game<GFEnt, GFFilmID> {
+  static async new(window: Window): Promise<GreenField> {
+    const canvas = window.document.getElementsByTagName('canvas').item(0)
+    assertNonNull(canvas, 'Canvas missing.')
+    return new GreenField(await Assets.load(), canvas, Math.random)
+  }
+
+  readonly cam: Readonly<Cam>
+  readonly filmByID: FilmByID<GFFilmID>
   readonly ecs: ECS<GFEnt>
-  tick: number
-  time: number
-}
+  readonly input: Readonly<Input>
+  pickHandled: boolean = false
+  readonly renderer: RendererStateMachine
 
-export function GreenField(window: Window, assets: Assets): GreenField {
-  const canvas = window.document.getElementsByTagName('canvas').item(0)
-  assertNonNull(canvas, 'Canvas missing.')
+  readonly #cursor: Sprite
+  readonly #random: () => number
+  /** The running age in milliseconds. */
+  #time: number = 0
+  /** The exact duration in milliseconds to apply on a given update step. */
+  #tick: number = 1
 
-  const random = Math.random
+  constructor(assets: Assets, canvas: HTMLCanvasElement, random: () => number) {
+    this.ecs = new ECS<GFEnt>()
+    this.ecs.addSystem(
+      new CamSystem(),
+      new FollowCamSystem(),
+      new CursorSystem(),
+      new FollowPointSystem(),
+      new TextSystem(),
+      new FPSSystem(),
+      new PickHealthAdderSystem(),
+      new SpawnerSystem(),
+      new RenderSystem<GFEnt>(assets.shaderLayout),
+    )
+    this.ecs.addEnt(
+      ...newLevelComponents(
+        new SpriteFactory(assets.atlasMeta.filmByID),
+        assets.font,
+      ),
+    )
 
-  const newRenderer = () =>
-    Renderer.new(canvas, assets.atlas, assets.shaderLayout, assets.atlasMeta)
+    this.ecs.patch()
+    this.cam = this.ecs.queryOne('cam').cam
 
-  const ecs = new ECS<GFEnt>()
-  ecs.addSystem(
-    new CamSystem(),
-    new FollowCamSystem(),
-    new CursorSystem(),
-    new FollowPointSystem(),
-    new TextSystem(),
-    new FPSSystem(),
-    new PickHealthAdderSystem(),
-    new SpawnerSystem(),
-    new RenderSystem<GFEnt>(assets.shaderLayout),
-  )
-  ecs.addEnt(
-    ...newLevelComponents(
-      new SpriteFactory(assets.atlasMeta.filmByID),
-      assets.font,
-    ),
-  )
-  ecs.patch()
-
-  const cam = ecs.queryOne('cam').cam
-  const self: GreenField = {
-    assets,
-    cam,
-    canvas,
-    random,
-    ecs,
-    input: new Input(cam),
-    renderer: new RendererStateMachine({
+    this.filmByID = assets.atlasMeta.filmByID
+    this.input = new Input(this.cam)
+    this.renderer = new RendererStateMachine({
       window,
       canvas,
-      onFrame: (delta) => GreenField.onFrame(self, delta),
-      onPause: () => self.input.reset(),
-      newRenderer,
-    }),
-    tick: 1,
-    time: 0,
-    cursor: ecs.query('cursor & sprite')[0]!.sprite,
-    filmByID: assets.atlasMeta.filmByID,
-  }
-  return self
-}
-
-export namespace GreenField {
-  export async function make(window: Window): Promise<GreenField> {
-    const assets = await Assets.load()
-    return GreenField(window, assets)
+      onFrame: (delta) => this.#onFrame(delta),
+      onPause: () => this.onPause(),
+      newRenderer: () =>
+        Renderer.new(
+          canvas,
+          assets.atlas,
+          assets.shaderLayout,
+          assets.atlasMeta,
+        ),
+    })
+    this.#random = random
+    this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
   }
 
-  export function start(self: GreenField): void {
-    self.input.register('add')
-    self.renderer.start()
+  get cursor(): Sprite {
+    return this.#cursor
   }
 
-  export function stop(self: GreenField): void {
-    self.input.register('remove')
-    self.renderer.stop()
+  onFrame(): void {
+    if (this.pickHandled) return
+    if (this.input.isComboStart(...combo)) {
+      Synth.play(Synth(), 'sawtooth', 200, 500, 0.15)
+      this.pickHandled = true
+      console.log('combo')
+    }
+    if (
+      this.input.isOnStart('DebugContextLoss') &&
+      !this.renderer.isContextLost()
+    ) {
+      this.pickHandled = true
+      this.renderer.loseContext()
+      setTimeout(
+        () => this.renderer.restoreContext(),
+        3000,
+      )
+    }
+  }
+
+  #onFrame(delta: number): void {
+    this.#tick = delta
+    this.#time += delta
+    this.pickHandled = false
+
+    this.input.preupdate()
+
+    this.onFrame()
+
+    this.ecs.run(this)
+
+    // should actual render be here and not in the ecs?
+    this.input.postupdate(this.tick)
+  }
+
+  onPause(): void {
+    this.input.reset()
+  }
+
+  random(): number {
+    return this.#random()
+  }
+
+  start(): void {
+    this.input.register('add')
+    this.renderer.start()
+  }
+
+  stop(): void {
+    this.input.register('remove')
+    this.renderer.stop()
     // win.close()
   }
 
-  export function onFrame(self: GreenField, delta: number): void {
-    self.tick = delta
-    self.time += delta
-    self.pickHandled = false
-
-    self.input.preupdate()
-
-    processDebugInput(self)
-
-    self.ecs.run(self)
-
-    // should actual render be here and not in the ecs?
-    self.input.postupdate(self.tick)
+  get tick(): number {
+    return this.#tick
   }
-}
 
-function processDebugInput(self: GreenField): void {
-  if (self.pickHandled) return
-  if (
-    self.input.isComboStart(
-      ['Up'],
-      ['Up'],
-      ['Down'],
-      ['Down'],
-      ['Left'],
-      ['Right'],
-      ['Left'],
-      ['Right'],
-      ['Menu'],
-      ['Action'],
-    )
-  ) {
-    Synth.play(Synth(), 'sawtooth', 200, 500, 0.15)
-    self.pickHandled = true
-    console.log('combo')
-  }
-  if (
-    self.input.isOnStart('DebugContextLoss') &&
-    !self.renderer.isContextLost()
-  ) {
-    self.pickHandled = true
-    self.renderer.loseContext()
-    setTimeout(
-      () => self.renderer.restoreContext(),
-      3000,
-    )
+  get time(): number {
+    return this.#time
   }
 }

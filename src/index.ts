@@ -7,5 +7,5 @@ console.log(`Green Field v${config.version}
 by │  │idoid
    └──┘`)
 
-const patience = await GreenField.make(window)
-GreenField.start(patience)
+const greenfield = await GreenField.new(window)
+greenfield.start()

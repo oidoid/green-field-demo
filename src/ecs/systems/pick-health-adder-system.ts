@@ -1,4 +1,4 @@
-import { GFEnt, GFRunState, PickHealthAdder } from '@/green-field'
+import { GFEnt, GreenField, PickHealthAdder } from '@/green-field'
 import { U16 } from '@/ooz'
 import { QueryEnt, Sprite, System } from '@/void'
 
@@ -13,12 +13,12 @@ export class PickHealthAdderSystem
   implements System<PickHealthAdderEnt, GFEnt> {
   readonly query = query
 
-  run(ents: ReadonlySet<PickHealthAdderEnt>, state: GFRunState): void {
-    if (state.pickHandled || !state.input.isOnStart('Action')) return
+  run(ents: ReadonlySet<PickHealthAdderEnt>, game: GreenField): void {
+    if (game.pickHandled || !game.input.isOnStart('Action')) return
     for (const ent of ents) {
-      if (state.pickHandled) continue
+      if (game.pickHandled) continue
       if (ent.health.health == 0) continue
-      if (!state.cursor.intersectsSprite(ent.sprite, state.time)) continue
+      if (!game.cursor.intersectsSprite(ent.sprite, game.time)) continue
 
       ent.health.health = U16.trunc(
         ent.health.health + ent.pickHealthAdder.delta,
@@ -27,9 +27,9 @@ export class PickHealthAdderSystem
       // to-do: health system
       // to-do: ability to delete component here
       // if (set.health == 0)
-      ent.sprite.animate(state.time, state.filmByID['bee--Dead'])
+      ent.sprite.animate(game.time, game.filmByID['bee--Dead'])
 
-      state.pickHandled = true
+      game.pickHandled = true
     }
   }
 }
