@@ -20,7 +20,7 @@ export class PickHealthAdderSystem
       if (ent.health.health == 0) continue
       if (!game.cursor.intersectsSprite(ent.sprite, game.time)) continue
 
-      ent.health.health = U16.trunc(
+      ent.health.health = U16.clamp(
         ent.health.health + ent.pickHealthAdder.delta,
       )
 
