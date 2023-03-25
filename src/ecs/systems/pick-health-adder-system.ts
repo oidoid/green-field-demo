@@ -17,7 +17,7 @@ export class PickHealthAdderSystem
     if (game.pickHandled || !game.input.isOnStart('Action')) return
     for (const ent of ents) {
       if (game.pickHandled) continue
-      if (ent.health.health == 0) continue
+      if (ent.health.health === 0) continue
       if (!game.cursor.intersectsSprite(ent.sprite, game.time)) continue
 
       ent.health.health = U16.clamp(
@@ -26,7 +26,7 @@ export class PickHealthAdderSystem
 
       // to-do: health system
       // to-do: ability to delete component here
-      // if (set.health == 0)
+      // if (set.health === 0)
       ent.sprite.animate(game.time, game.filmByID['bee--Dead'])
 
       game.pickHandled = true
