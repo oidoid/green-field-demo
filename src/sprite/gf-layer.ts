@@ -1,9 +1,8 @@
-import { Immutable, U8 } from '@/ooz'
 import { Layer } from '@/void'
 
-export const GFLayer = Immutable({
+export const GFLayer = {
   ...Layer,
-  Background: U8(0x02),
-}) satisfies { [name: string]: U8 }
+  Background: 0x02,
+} satisfies { [name: string]: number }
 
 export type GFLayer = keyof typeof GFLayer

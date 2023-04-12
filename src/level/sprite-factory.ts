@@ -1,11 +1,10 @@
 import { FilmByID } from '@/atlas-pack'
 import { GFFilmID, GFLayer } from '@/green-field'
-import { U8 } from '@/ooz'
 import { FilmLUT, Sprite, SpriteProps } from '@/void'
 
 export class SpriteFactory implements FilmLUT {
   readonly #filmByID: FilmByID<GFFilmID>
-  readonly layerByID: Readonly<{ [id in GFLayer]: U8 }> = GFLayer
+  readonly layerByID: Readonly<{ [id in GFLayer]: number }> = GFLayer
 
   get filmByID(): FilmByID<GFFilmID> {
     return this.#filmByID

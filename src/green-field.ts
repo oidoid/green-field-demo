@@ -2,47 +2,51 @@ import {
   GFAssets,
   GFEnt,
   GFFilmID,
+  loadGFAssets,
   newLevelComponents,
   PickHealthAdderSystem,
   SpawnerSystem,
   SpriteFactory,
 } from '@/green-field'
-import { assertNonNull, Immutable, U16XY } from '@/ooz'
+import { assertNonNull, XY } from '@/ooz'
 import {
   CursorSystem,
   FollowCamSystem,
   FollowPointSystem,
   FPSSystem,
-  RenderSystem,
   Sprite,
   Synth,
   TextSystem,
   VoidGame,
 } from '@/void'
 
-const combo = Immutable(
-  [
-    ['Up'],
-    ['Up'],
-    ['Down'],
-    ['Down'],
-    ['Left'],
-    ['Right'],
-    ['Left'],
-    ['Right'],
-    ['Menu'],
-    ['Action'],
-  ] as const,
-)
+const combo = [
+  ['Up'],
+  ['Up'],
+  ['Down'],
+  ['Down'],
+  ['Left'],
+  ['Right'],
+  ['Left'],
+  ['Right'],
+  ['Menu'],
+  ['Action'],
+] as const
 
 export class GreenField extends VoidGame<GFEnt, GFFilmID> {
   static async new(window: Window): Promise<GreenField> {
     const canvas = window.document.getElementsByTagName('canvas').item(0)
     assertNonNull(canvas, 'Canvas missing.')
-    return new GreenField(await GFAssets.load(), canvas, Math.random, window)
+    return new GreenField(
+      await loadGFAssets(),
+      canvas,
+      Math.random,
+      window,
+    )
   }
 
   readonly #cursor: Sprite
+  readonly #underCursor: Set<Readonly<Sprite>> = new Set()
 
   constructor(
     assets: GFAssets,
@@ -50,9 +54,10 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     random: () => number,
     window: Window,
   ) {
-    super(assets, canvas, new U16XY(160, 140), random, window)
+    super(assets, canvas, new XY(320, 280), random, window)
 
     this.ecs.addSystem(
+      // new BeelineSystem(),
       new FollowCamSystem(),
       new CursorSystem(),
       new FollowPointSystem(),
@@ -60,7 +65,6 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
       new FPSSystem(),
       new PickHealthAdderSystem(),
       new SpawnerSystem(),
-      new RenderSystem<GFEnt>(assets.shaderLayout),
     )
     this.ecs.addEnt(
       ...newLevelComponents(
@@ -73,14 +77,22 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
   }
 
-  get cursor(): Sprite {
-    return this.#cursor
+  intersectsCursor(sprite: Readonly<Sprite>): boolean {
+    return this.#cursor.intersects(sprite, this.time)
+    // return this.#underCursor.has(sprite)
   }
 
   override onFrame(): void {
+    this.#underCursor.clear()
+    // for (const sprite of this.queryGrid(this.#cursor.bounds)) {
+    //   if (this.#cursor.intersectsSprite(sprite, this.time)) {
+    //     this.#underCursor.add(sprite)
+    //   }
+    // }
     if (this.pickHandled) return
     if (this.input.isComboStart(...combo)) {
-      Synth.play(Synth(), 'sawtooth', 200, 500, 0.15)
+      const synth = new Synth()
+      synth.play('sawtooth', 200, 500, 0.15)
       this.pickHandled = true
       console.log('combo')
     }

@@ -1,18 +1,19 @@
 import { GFEnt, SpriteFactory } from '@/green-field'
-import { I16, U16 } from '@/ooz'
-import { Font, LevelParser, VoidEntJSON } from '@/void'
+import { Font, parseComponent, VoidEntJSON } from '@/void'
 
 interface GFEntJSON extends VoidEntJSON {
 }
 
-export namespace GFLevelParser {
-  export function parse(
-    factory: SpriteFactory,
-    json: readonly GFEntJSON[],
-    font: Font,
-  ): Partial<GFEnt>[] {
-    return json.map((setJSON) => parseComponentSet(factory, setJSON, font))
+export function parseLevel(
+  factory: SpriteFactory,
+  json: Iterable<GFEntJSON>,
+  font: Font,
+): Partial<GFEnt>[] {
+  const ents = []
+  for (const entJSON of json) {
+    ents.push(parseComponentSet(factory, entJSON, font))
   }
+  return ents
 }
 
 function parseComponentSet(
@@ -24,7 +25,7 @@ function parseComponentSet(
     Record<keyof GFEnt, GFEnt[keyof GFEnt]>
   > = {}
   for (const [key, val] of Object.entries(json)) {
-    const component = LevelParser.parseComponent(factory, font, key, val)
+    const component = parseComponent(factory, font, key, val)
     if (component != null) {
       set[key as keyof GFEntJSON] = component
       continue
@@ -34,10 +35,10 @@ function parseComponentSet(
       case 'name':
         break
       case 'health':
-        set.health = { health: U16(val) }
+        set.health = { points: val }
         break
       case 'pickHealthAdder':
-        set.pickHealthAdder = { delta: I16(val.delta) }
+        set.pickHealthAdder = { delta: val.delta }
         break
       case 'spawner':
         set.spawner = []

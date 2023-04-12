@@ -1,10 +1,9 @@
-import { GFEnt, GFLevelParser, level, SpriteFactory } from '@/green-field'
-import { I16 } from '@/ooz'
+import { GFEnt, level, parseLevel, SpriteFactory } from '@/green-field'
 import { Font } from '@/void'
 
 export function* newLevelComponents(
   factory: SpriteFactory,
-  font: Font<I16>,
+  font: Font,
 ): IterableIterator<Partial<GFEnt>> {
-  yield* GFLevelParser.parse(factory, level, font)
+  yield* parseLevel(factory, level, font)
 }
