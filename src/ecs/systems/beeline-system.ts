@@ -19,7 +19,7 @@ export class BeelineSystem implements System<BeelineEnt, GFEnt> {
       ent.beeline.timeout = game.time + 1_000 + game.random() * 5_000
       return
     }
-    const diff = ent.target.copy().sub(ent.sprite.xy)
+    const diff = ent.target.copy().sub(ent.sprite.bounds.xy)
     const speed = ent.beeline.speed * game.tick / 1000
     ent.sprite.x += Math.abs(diff.x) < speed ? 0 : speed * Math.sign(diff.x)
     ent.sprite.y += Math.abs(diff.y) < speed ? 0 : speed * Math.sign(diff.y)

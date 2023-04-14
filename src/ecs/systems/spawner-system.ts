@@ -29,7 +29,7 @@ function spawnBee(game: GreenField): Partial<GFEnt> {
     sprite,
     health: { points: 1 },
     pickHealthAdder: { delta: -1 },
-    target: sprite.xy.copy(),
+    target: sprite.bounds.xy.copy(),
     beeline: { speed: 1 + game.random() * 12, timeout: 0 },
   })
 }

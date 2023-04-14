@@ -16,7 +16,7 @@ export class PickHealthAdderSystem
     if (game.pickHandled || !game.input.isOnStart('Action')) return
     for (const ent of ents) {
       if (ent.health.points === 0) continue
-      if (!game.intersectsCursor(ent.sprite)) continue
+      if (!game.hitsCursor(ent.sprite)) continue
 
       ent.health.points += ent.pickHealthAdder.delta
       // to-do: health system

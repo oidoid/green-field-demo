@@ -23,14 +23,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -52,14 +54,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -81,14 +85,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -171,6 +177,12 @@
           ]
         }
       ],
+      "sliceBounds": {
+        "x": 1,
+        "y": 1,
+        "w": 4,
+        "h": 2
+      },
       "period": 120,
       "duration": 360,
       "direction": "Forward",
@@ -192,14 +204,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -232,6 +246,10 @@
           ]
         }
       ],
+      "sliceBounds": {
+        "w": 3,
+        "h": 3
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -264,6 +282,10 @@
           ]
         }
       ],
+      "sliceBounds": {
+        "w": 3,
+        "h": 3
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -286,14 +308,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -316,14 +340,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -346,14 +372,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -376,14 +404,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -406,14 +436,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -436,14 +468,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -466,14 +500,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -496,14 +532,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -526,14 +564,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -556,14 +596,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -586,14 +628,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -616,14 +660,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -646,14 +692,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -676,14 +724,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -706,14 +756,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -736,14 +788,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -766,14 +820,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -796,14 +852,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -826,14 +884,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -856,14 +916,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -886,14 +948,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -916,14 +980,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -946,14 +1012,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -976,14 +1044,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1006,14 +1076,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1036,14 +1108,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1066,14 +1140,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1096,14 +1172,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1126,14 +1204,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1156,14 +1236,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1186,14 +1268,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1216,14 +1300,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1246,14 +1332,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1276,14 +1364,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1306,14 +1396,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1336,14 +1428,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1366,14 +1460,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1396,14 +1492,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1426,14 +1524,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1456,14 +1556,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1486,14 +1588,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1516,14 +1620,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1546,14 +1652,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1576,14 +1684,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1606,14 +1716,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1636,14 +1748,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1666,14 +1780,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1696,14 +1812,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1726,14 +1844,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1756,14 +1876,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1786,14 +1908,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1816,14 +1940,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1846,14 +1972,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1876,14 +2004,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1906,14 +2036,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1936,14 +2068,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1966,14 +2100,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -1996,14 +2132,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2026,14 +2164,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2056,14 +2196,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2086,14 +2228,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2116,14 +2260,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2146,14 +2292,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2176,14 +2324,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2206,14 +2356,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2236,14 +2388,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2266,14 +2420,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2296,14 +2452,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2326,14 +2484,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2356,14 +2516,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2386,14 +2548,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2416,14 +2580,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2446,14 +2612,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2476,14 +2644,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2506,14 +2676,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2536,14 +2708,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2566,14 +2740,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2596,14 +2772,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2626,14 +2804,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2656,14 +2836,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2686,14 +2868,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2716,14 +2900,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2745,14 +2931,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2774,14 +2962,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2803,14 +2993,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2832,14 +3024,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2861,14 +3055,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2890,14 +3086,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2919,14 +3117,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2948,14 +3148,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -2977,14 +3179,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3006,14 +3210,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3035,14 +3241,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3064,14 +3272,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3093,14 +3303,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3122,14 +3334,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3151,14 +3365,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3180,14 +3396,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3209,14 +3427,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3238,14 +3458,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3267,14 +3489,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3296,14 +3520,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3325,14 +3551,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3354,14 +3582,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3383,14 +3613,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3412,14 +3644,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3441,14 +3675,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3470,14 +3706,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3500,14 +3738,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3530,14 +3770,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3560,14 +3802,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3590,14 +3834,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3620,14 +3866,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3650,14 +3898,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3680,14 +3930,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3710,14 +3962,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3740,14 +3994,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3770,14 +4026,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3799,14 +4057,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3828,14 +4088,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3857,14 +4119,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3886,14 +4150,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3915,14 +4181,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3944,14 +4212,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -3973,14 +4243,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -4002,14 +4274,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -4031,14 +4305,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -4060,14 +4336,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -4090,14 +4368,16 @@
           },
           "duration": 65535,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 65535,
       "duration": 65535,
       "direction": "Forward",
@@ -4119,14 +4399,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -4148,14 +4430,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -4177,14 +4461,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -4206,14 +4492,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",
@@ -4235,14 +4523,16 @@
           },
           "duration": 1,
           "sliceBounds": {
-            "x": 1,
-            "y": 1,
             "w": -1,
             "h": -1
           },
           "slices": []
         }
       ],
+      "sliceBounds": {
+        "w": -1,
+        "h": -1
+      },
       "period": 1,
       "duration": 1,
       "direction": "Forward",

@@ -77,8 +77,8 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
   }
 
-  intersectsCursor(sprite: Readonly<Sprite>): boolean {
-    return this.#cursor.intersects(sprite, this.time)
+  hitsCursor(sprite: Readonly<Sprite>): boolean {
+    return this.#cursor.hits(sprite)
     // return this.#underCursor.has(sprite)
   }
 
