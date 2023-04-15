@@ -26,7 +26,7 @@ function spawnBee(game: GreenField): Partial<GFEnt> {
     time: -Math.trunc(Math.random() * 1_000),
   })
   return game.ecs.addEnt({
-    sprite,
+    sprites: [sprite],
     health: { points: 1 },
     pickHealthAdder: { delta: -1 },
     target: sprite.bounds.xy.copy(),

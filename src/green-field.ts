@@ -1,4 +1,5 @@
 import {
+  BeelineSystem,
   GFAssets,
   GFEnt,
   GFFilmID,
@@ -37,16 +38,12 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
   static async new(window: Window): Promise<GreenField> {
     const canvas = window.document.getElementsByTagName('canvas').item(0)
     assertNonNull(canvas, 'Canvas missing.')
-    return new GreenField(
-      await loadGFAssets(),
-      canvas,
-      Math.random,
-      window,
-    )
+    return new GreenField(await loadGFAssets(), canvas, Math.random, window)
   }
 
   readonly #cursor: Sprite
   readonly #underCursor: Set<Readonly<Sprite>> = new Set()
+  readonly synth = new Synth()
 
   constructor(
     assets: GFAssets,
@@ -57,9 +54,9 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     super(assets, canvas, new XY(320, 280), random, window)
 
     this.ecs.addSystem(
-      // new BeelineSystem(),
+      new BeelineSystem(),
       new FollowCamSystem(),
-      new CursorSystem(),
+      new CursorSystem(false),
       new FollowPointSystem(),
       new TextSystem(),
       new FPSSystem(),
@@ -74,7 +71,7 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     )
     this.ecs.patch()
 
-    this.#cursor = this.ecs.queryOne('cursor & sprite').sprite
+    this.#cursor = this.ecs.queryOne('cursor & sprites').sprites[0]
   }
 
   hitsCursor(sprite: Readonly<Sprite>): boolean {
@@ -84,6 +81,10 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
 
   override onFrame(): void {
     this.#underCursor.clear()
+    if (this.input.isOn('Left')) this.cam.viewport.x -= 8
+    if (this.input.isOn('Right')) this.cam.viewport.x += 8
+    if (this.input.isOn('Up')) this.cam.viewport.y -= 8
+    if (this.input.isOn('Down')) this.cam.viewport.y += 8
     // for (const sprite of this.queryGrid(this.#cursor.bounds)) {
     //   if (this.#cursor.intersectsSprite(sprite, this.time)) {
     //     this.#underCursor.add(sprite)
@@ -91,8 +92,6 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     // }
     if (this.pickHandled) return
     if (this.input.isComboStart(...combo)) {
-      const synth = new Synth()
-      synth.play('sawtooth', 200, 500, 0.15)
       this.pickHandled = true
       console.log('combo')
     }
