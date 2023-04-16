@@ -65,7 +65,7 @@ export class GreenField extends VoidGame<GFEnt, GFFilmID> {
     )
     this.ecs.addEnt(
       ...newLevelComponents(
-        new SpriteFactory(assets.atlasMeta.filmByID),
+        new SpriteFactory(assets.atlas.filmByID),
         assets.font,
       ),
     )

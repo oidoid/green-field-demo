@@ -1,4 +1,4 @@
-import { AtlasMeta } from '@/atlas-pack'
+import { Atlas } from '@/atlas-pack'
 import { atlasJSON, GFFilmID } from '@/green-field'
 import { memProp5x6 } from '@/mem'
 import {
@@ -15,8 +15,8 @@ export interface GFAssets extends Assets<GFFilmID> {
 }
 
 export async function loadGFAssets(): Promise<GFAssets> {
-  const atlas = await loadImage('atlas.png')
-  const atlasMeta = AtlasMeta.fromJSON<GFFilmID>(atlasJSON)
+  const atlas = Atlas.fromJSON<GFFilmID>(atlasJSON)
+  const spritesheet = await loadImage('atlas.png')
   const shaderLayout = parseShaderLayout(shaderLayoutConfig)
-  return { atlas, atlasMeta, font: parseFont(memProp5x6), shaderLayout }
+  return { atlas, spritesheet, font: parseFont(memProp5x6), shaderLayout }
 }
