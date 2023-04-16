@@ -1,4 +1,10 @@
-import { GFEnt, GreenField, Health, PickHealthAdder } from '@/green-field'
+import {
+  GFEnt,
+  GFLayer,
+  GreenField,
+  Health,
+  PickHealthAdder,
+} from '@/green-field'
 import { QueryEnt, Sprite, System } from '@/void'
 
 export type PickHealthAdderEnt = QueryEnt<
@@ -27,6 +33,7 @@ export class PickHealthAdderSystem
       // to-do: ability to delete component here
       // if (set.health === 0)
       ent.sprites[0].animate(game.time, game.filmByID['bee--Dead'])
+      ent.sprites[0].layer = GFLayer.Decal
       game.ecs.removeKeys(ent, 'beeline', 'pickHealthAdder')
 
       game.synth.play('sawtooth', 100, 200, 0.15)

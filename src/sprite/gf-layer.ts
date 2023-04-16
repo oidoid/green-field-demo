@@ -2,7 +2,10 @@ import { Layer } from '@/void'
 
 export const GFLayer = {
   ...Layer,
-  Background: 0x02,
+  Character: 0x3c,
+  Scenery: 0x03d,
+  Decal: 0x03e,
+  Background: 0x3f,
 } satisfies { [name: string]: number }
 
 export type GFLayer = keyof typeof GFLayer

@@ -3,17 +3,21 @@
     "name": "cursor",
     "cursor": { "pick": "cursor--Pick", "point": "cursor--Point" },
     "followPoint": {},
-    "sprites": [{ "id": "cursor--Point", "layer": "Bottom" }]
+    "sprites": [{ "id": "cursor--Point", "layer": "Cursor" }]
   },
 
   {
     "name": "flower",
-    "sprites": [{ "id": "flower--Flower", "layer": "Top", "x": 60, "y": 50 }]
+    "sprites": [
+      { "id": "flower--Flower", "layer": "Scenery", "x": 60, "y": 50 }
+    ]
   },
 
   {
     "name": "beehive",
-    "sprites": [{ "id": "flower--Flower", "layer": "Top", "x": 10, "y": 50 }],
+    "sprites": [
+      { "id": "flower--Flower", "layer": "Scenery", "x": 10, "y": 50 }
+    ],
     "spawner": {}
   },
   {
@@ -23,12 +27,14 @@
       "orientation": "Northwest",
       "pad": { "x": 1, "y": 1 }
     },
-    "sprites": [{
-      "id": "palette--Yellow",
-      "layer": "Background",
-      "layerByHeight": true,
-      "wrap": { "x": -1, "y": -1 }
-    }]
+    "sprites": [
+      {
+        "id": "palette--Yellow",
+        "layer": "Background",
+        "layerAnchorEnd": true,
+        "wrap": { "x": -1, "y": -1 }
+      }
+    ]
   },
 
   {
@@ -37,7 +43,7 @@
     "sprites": [{
       "id": "palette--Light",
       "layer": "Top",
-      "layerByHeight": true,
+      "layerAnchorEnd": true,
       "w": 13,
       "h": 7
     }]

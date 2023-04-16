@@ -20,7 +20,7 @@ export class SpawnerSystem implements System<SpawnerEnt, GFEnt> {
 
 // to-do: can this be a template sprite inside of spawner?
 function spawnBee(game: GreenField): Partial<GFEnt> {
-  const sprite = new Sprite(game.filmByID['bee--Fly'], GFLayer.Background, {
+  const sprite = new Sprite(game.filmByID['bee--Fly'], GFLayer.Character, {
     x: Math.trunc(game.random() * 4096),
     y: Math.trunc(game.random() * 4096),
     time: -Math.trunc(Math.random() * 1_000),

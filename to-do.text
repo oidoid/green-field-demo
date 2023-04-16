@@ -1,4 +1,5 @@
 Get first maze implementation up. Just keep tileset static for background. Keep the drawings simple.
+  LDTK https://ldtk.io/files/JSON_SCHEMA.json
    ______________
   |      _       |
   |     |_|      |
